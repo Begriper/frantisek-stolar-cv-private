@@ -74,9 +74,9 @@ remain pending. The design stays blue, rounded and light-only. Desktop/print col
 hobbies appear last in the sidebar. Digital skills explicitly refer to courses and
 independent study in 2025. Employer dates sit on their own line. Print text is
 10.5pt in the main column and 10pt in the sidebar, with natural column heights.
-No content changes have been committed, pushed or deployed. The original-version tag
-exists locally; uploading it is blocked by GitHub authentication/write permissions.
-See docs/VERSIONING.md for verified local backups and recovery steps.
+All preserved content is now committed and pushed to the private archive. The
+original-version tag and complete history are included there. The public website
+has not been updated. See docs/VERSIONING.md for backups and recovery steps.
 
 ## Development and checks
 

@@ -10,7 +10,10 @@ or final wording/design. Earlier pending-commit notes below are historical.
 Repository created: https://github.com/Begriper/frantisek-stolar-cv-private.
 GitHub UI confirmed Private, owned by Begriper. No collaborators were added.
 The public repository still points to 72eab9e. A separate `private` remote is used,
-preserving the existing public `origin`.
+preserving the existing public `origin`. Upload succeeded: archival commit
+`f904049` is on private `main` and `cv/compact-general`; `original-published`
+points to 72eab9e. Both original and archive tags were pushed atomically. Remote
+refs were checked, and public origin/main remains unchanged at 72eab9e.
 
 Archive includes seven source states, the complete original multilingual website,
 all 27 saved PDF files (including technical duplicate review exports), original

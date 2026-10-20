@@ -17,6 +17,11 @@ Nepoužívať `git push --all origin`, aby sa archív omylom nenahral na verejn�
 
 Nižšie sú ponechané historické záznamy z obdobia pred zriadením privátneho archívu.
 
+Upload bol dokončený a vzdialené refs overené: archivačný commit `f904049`, vetvy
+`main` a `cv/compact-general`, pôvodná vetva `original-published` a oba tagy.
+Predošlý problém s prihlásením sa pri tomto nahratí vyriešil cez Git Credential
+Manager. Pôvodný verejný `origin/main` zostal na `72eab9e`.
+
 ## Stav k 22.09.2026
 
 Pôvodný publikovaný commit: `72eab9efbb32d62ec0a738c94e604af0512b3d83`.
