@@ -1,0 +1,83 @@
+/* One semantic type scale for every language, in screen and print media. */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter/Inter-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-synthesis: none;
+  --cv-name: 36px;
+  --cv-section: 20px;
+  --cv-role: 18px;
+  --cv-company: 16px;
+  --cv-subheading: 16px;
+  --cv-body: 16px;
+  --cv-sidebar: 16px;
+  --cv-meta: 14px;
+  --cv-leading: 1.5;
+}
+@media screen and (max-width: 767px) {
+  :root { --cv-name: 30px; }
+}
+@media print {
+  :root {
+    --cv-name: 26pt;
+    --cv-section: 12pt;
+    --cv-role: 10.5pt;
+    --cv-company: 10.5pt;
+    --cv-subheading: 10pt;
+    --cv-body: 10.5pt;
+    --cv-sidebar: 10pt;
+    --cv-meta: 9.5pt;
+    --cv-leading: 1.4;
+  }
+}
+.hero__name { font-size: var(--cv-name); font-weight: 700; line-height: 1.15; letter-spacing: -.025em; }
+.section__title { font-size: var(--cv-section); font-weight: 600; line-height: 1.2; text-transform: none; letter-spacing: normal; }
+.exp-item__role { font-size: var(--cv-role); font-weight: 700; line-height: 1.3; }
+.exp-item__meta { font-style: normal; }
+.exp-item__company, .employment-company {
+  font-family: inherit;
+  font-size: var(--cv-company);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: var(--color-primary);
+}
+.exp-item__date, .employment-period, .employment-note, .edu__meta {
+  font-size: var(--cv-meta);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.col-main { font-size: var(--cv-body); }
+.col-aside { font-size: var(--cv-sidebar); }
+.col-aside .sub { font-size: var(--cv-subheading); font-weight: 700; font-style: normal; line-height: 1.3; }
+.employment-description, .resume-grid .list li, .resume-grid p, .resume-grid .muted { line-height: var(--cv-leading); }

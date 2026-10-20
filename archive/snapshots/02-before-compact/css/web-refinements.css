@@ -1,0 +1,9 @@
+/* Keep the original design; prevent long columns from stretching their sections. */
+.resume-grid { align-items: start; }
+.col-main, .col-aside, .section { align-content: start; min-width: 0; }
+.contact a, .muted, .card__text { overflow-wrap: anywhere; }
+.exp-item__date { white-space: nowrap; }
+@media (max-width: 480px) {
+  .lang-switch { flex-wrap: wrap; justify-content: center; }
+}
+.skip-link:not(:focus) { top: -100px; }

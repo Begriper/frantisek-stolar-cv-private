@@ -11,7 +11,7 @@
     <meta name="author" content="František Stolár" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#2563eb" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -46,18 +46,7 @@
       href="https://begriper.github.io/"
     />
 
-    <script>
-      // Prevent theme flash - initialize immediately
-      (function() {
-        const theme = localStorage.getItem('theme') || 'auto';
-        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else if (theme === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      })();
-    </script>
-    <script src="/js/main.js" type="module"></script>
+<script src="/js/main.js" type="module"></script>
   </head>
 
   <body>
@@ -85,15 +74,7 @@
         <a href="/pl/" data-lang="pl" class="lang">PL</a>
         <a href="/en/" data-lang="en" class="lang">EN</a>
         <a href="/de/" data-lang="de" class="lang">DE</a>
-        <button 
-          id="theme-toggle" 
-          class="theme-toggle"
-          aria-label="Toggle theme (light, dark, auto)"
-          title="Toggle theme"
-        >
-          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-        </button>
-      </nav>
+</nav>
     </header>
 
     <main id="main" class="container resume-card" role="main">
@@ -101,23 +82,7 @@
         <!-- =========  LINKE SPALTE  ========= -->
         <section class="col-main">
           <!-- ===== Kurzprofil ===== -->
-          <section id="summary" class="section">
-            <h2 class="section__title">Kurzprofil</h2>
-            <p>
-              Verantwortungsbewusster und präziser Mitarbeiter mit langjähriger
-              Erfahrung in der deutschen Logistik (Müller – Ulm) und großem
-              Interesse an Technologie, Datenanalyse und Prozessautomatisierung.
-              Seit Mai 2025 baue ich aktiv meine Kenntnisse in Data Analytics
-              (Excel, Power Query, SQL, Power BI, Python). Ich arbeite
-              selbstständig wie im Team, lerne neue Technologien –
-              einschließlich KI – äußerst schnell und lege besonderen Wert auf
-              Effizienz, Qualität und lösungsorientiertes Handeln.
-            </p>
-          </section>
-
-          <hr class="divider" />
-
-          <!-- ===== Berufserfahrung ===== -->
+<!-- ===== Berufserfahrung ===== -->
           <section id="experience" class="section">
             <h2 class="section__title">Berufserfahrung</h2>
 

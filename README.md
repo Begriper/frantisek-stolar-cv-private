@@ -1,0 +1,112 @@
+# František Stolár — súkromný archív životopisov
+
+Repozitár určený pre `Begriper/frantisek-stolar-cv-private`. Obsahuje osobné údaje
+zo životopisu a je určený na súkromnú prácu cez ChatGPT, Claude alebo lokálne nástroje.
+
+## Kde začať
+
+- **Najnovšie editovateľné zdroje:** koreň repozitára, najmä `data/cv.json`,
+  `scripts/render.mjs`, `css/typography.css` a `css/print.css`.
+- **Pôvodný široký web v piatich jazykoch:**
+  [archive/snapshots/01-original-published](archive/snapshots/01-original-published).
+  Je to presná kópia pôvodného publikovaného commitu `72eab9e`, pred našimi úpravami.
+- **Všetky zachované verzie a ich obmedzenia:** [archive/README.md](archive/README.md).
+- **Najnovšie uložené slovenské PDF s Interom:**
+  [Frantisek_Stolar_CV_general_SK.pdf](archive/pdfs/downloads/Frantisek_Stolar_CV_general_SK.pdf).
+- **Ostatné uložené PDF:** [archive/pdfs](archive/pdfs). Česká, poľská, nemecká
+  a anglická exportovaná verzia sú zo staršieho dizajnu; nie sú to finálne Inter PDF.
+- **Presná aktuálna webová ukážka v piatich jazykoch:**
+  [archive/snapshots/07-current-generated-web](archive/snapshots/07-current-generated-web).
+- **Pokyny pre AI:** [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md).
+
+## Čo bolo online a čo bolo iba lokálne
+
+K 20. 10. 2026 vzdialený `Begriper/begriper.github.io` stále ukazoval na pôvodný
+commit `72eab9efbb32d62ec0a738c94e604af0512b3d83`. Tu sa upravovali webové zdroje
+aj PDF, ale nové návrhy neboli nasadené na verejnú stránku. Vytvorenie tohto
+súkromného archívu nie je publikovaním novej verzie verejného webu.
+
+Git história obsahuje aj staršie publikované commity až po prvý commit
+`ca6f4c2d1897a439302ca0559b892f94696a6a4b`. Tag `cv-original-72eab9e` označuje
+stav webu pred touto sériou úprav. Nezamieňať ho s úplne prvým Git commitom.
+
+Prístup AI k súkromnému repozitáru treba povoliť osobitne v príslušnom nástroji.
+Samotný odkaz Claude ani ChatGPT automaticky neoprávňuje čítať súkromné súbory.
+
+## Technická dokumentácia webu
+
+Nasledujúci opis zachováva pôvodné vývojové pokyny. Samostatná kópia je aj v
+[docs/WEBSITE_README.md](docs/WEBSITE_README.md). Archivačné povolenie na commit
+a push nemení stav schválenia vzhľadu, prekladov ani verejného publikovania.
+
+The original blue, rounded-card website is the current presentation. Visitors print
+with the browser's Print command / Ctrl+P, choosing a printer or Save as PDF.
+There are no download/print buttons, profile section, theme controls or editorial banners.
+
+## Current implementation
+
+- The five original language HTML files supply the preserved markup and screen design.
+- data/cv.json supplies localized employment descriptions, shared dates/employers and supplemental sections.
+- scripts/render.mjs injects current content into the original markup.
+- css/web-refinements.css preserves the original layout and styles grouped employer entries.
+- css/print.css adapts that same page to A4 with blue headings, rounded cards, photo and two columns.
+- css/typography.css is loaded last and defines the shared screen/print scale for names, headings, employers, dates and body text. Browser checks verify computed typography across all locales.
+- Generated previews and exports are under dist/; verification artifacts are under .review/ (both ignored).
+- The former graphite screen design is unused. The standalone document template remains available only for deferred targeted variants; it is not the general website/PDF renderer.
+
+Current review stage: the Inter design is implemented in shared styles, and the
+Slovak web/PDF is ready for appearance approval. Other language PDF exports will be
+regenerated and visually checked after that approval. See docs/PROJECT_STATE.md.
+
+All five general CVs (SK/CS/PL/DE/EN) are content-aligned; the preceding design was
+verified at two A4 pages in every language.
+All 19 employment periods are retained. Warehousing has one shared card with six
+employers (Müller retains four separate periods); metalworking has one card with
+four workplaces. Deltrian and TeleMarCom remain separate. Courses and hobbies,
+including mountain hiking, are retained. Projects, long IT lists, availability
+statements and the copyright footer are absent from public output.
+Shared display order and membership live in generalOrder/generalGroups in data/cv.json;
+localized titles, per-employer descriptions and sections live in locales.*.generalWeb.
+Historical job facts and detailed legacy sections remain intact. All five language
+versions include confirmed Deltrian dates (10/2025–04/2026).
+Translation drafts were explicitly requested; user review and publication approval
+remain pending. The design stays blue, rounded and light-only. Desktop/print columns use a 68/32 split;
+hobbies appear last in the sidebar. Digital skills explicitly refer to courses and
+independent study in 2025. Employer dates sit on their own line. Print text is
+10.5pt in the main column and 10pt in the sidebar, with natural column heights.
+No content changes have been committed, pushed or deployed. The original-version tag
+exists locally; uploading it is blocked by GitHub authentication/write permissions.
+See docs/VERSIONING.md for verified local backups and recovery steps.
+
+## Development and checks
+
+Node.js 22+ and Playwright 1.62.1 are required. Use the available bundled Playwright
+through NODE_PATH, or install the pinned dependency with permission. Chromium or
+Microsoft Edge must be available. CV_BROWSER can select an installed channel.
+
+    npm test
+    npm run build
+    npm run preview
+
+Open http://127.0.0.1:4173/sk/ and use Ctrl+P. CSS handles printing without JavaScript
+and without requiring the visitor to scroll. A4/default scale is the verified setup.
+
+    npm run check
+    python scripts/verify_browser_print.py
+    npm run pdf -- --lang sk
+    npm run pdf -- --lang cs
+    npm run pdf -- --lang pl
+    npm run pdf -- --lang de
+    npm run pdf -- --lang en
+    python scripts/verify_pdf.py
+
+The UI check exports all five actual pages using print media, before scrolling. It
+also checks mobile/desktop, dark saved preferences, no-JS printing, and no-background
+printing. Python verifies complete employment and supplemental text, non-splitting job
+cards, contact on page one and equivalent content before/after scrolling. It renders
+PDF pages for visual inspection. Python dependencies: pypdf, pypdfium2 and Pillow.
+
+npm run pdf produces a developer preview of the Slovak page's native print output;
+it does not add a download link to the website. Do not edit generated dist files.
+Targeted exports and publication retain explicit approval gates; general translation drafts are authorized. Publication is a
+separate final step and no deployment workflow is enabled.

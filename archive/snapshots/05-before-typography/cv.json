@@ -1,0 +1,1485 @@
+{
+  "schemaVersion": 1,
+  "person": {
+    "name": "František Stolár",
+    "city": "Poprad",
+    "phone": "+421 907 407 968",
+    "email": "fero.stolar@gmail.com",
+    "website": "https://frantisek-stolar.cv",
+    "github": "https://github.com/Begriper",
+    "linkedin": "https://linkedin.com/in/frantisek-stolar"
+  },
+  "jobs": [
+    {
+      "id": "deltrian",
+      "employer": "Deltrian",
+      "start": "2025-10",
+      "end": "2026-04",
+      "dateStatus": "confirmed"
+    },
+    {
+      "id": "telemarcom",
+      "employer": "TeleMarCom European Services GmbH",
+      "start": "2023-02",
+      "end": "2023-04"
+    },
+    {
+      "id": "muller-2021",
+      "employer": "Drogerie Dienst Müller",
+      "start": "2021-02",
+      "end": "2024-03"
+    },
+    {
+      "id": "baur",
+      "employer": "BAUR, Altenkunstadt",
+      "start": "2021-01",
+      "end": "2021-02"
+    },
+    {
+      "id": "rewe",
+      "employer": "Syldorf GmbH & Co. KG (REWE)",
+      "start": "2020-03",
+      "end": "2020-03"
+    },
+    {
+      "id": "mytoys",
+      "employer": "myToys Logistik GmbH",
+      "start": "2020-01",
+      "end": "2020-02"
+    },
+    {
+      "id": "muller-2019",
+      "employer": "Drogerie Dienst Müller Ulm GmbH",
+      "start": "2019-10",
+      "end": "2019-12"
+    },
+    {
+      "id": "lidl",
+      "employer": "Lidl Online Shop Ludwigsfelde GmbH",
+      "start": "2019-02",
+      "end": "2019-10"
+    },
+    {
+      "id": "muller-2018",
+      "employer": "Drogerie Dienst Müller Ulm GmbH",
+      "start": "2018-05",
+      "end": "2018-12"
+    },
+    {
+      "id": "hermes",
+      "employer": "Hermes Fulfillment GmbH, Haldensleben",
+      "start": "2018-02",
+      "end": "2018-04"
+    },
+    {
+      "id": "muller-2017",
+      "employer": "Drogerie Dienst Müller Ulm GmbH",
+      "start": "2017-09",
+      "end": "2017-12"
+    },
+    {
+      "id": "zibura",
+      "employer": "Zibura Kovo",
+      "start": "2017-06",
+      "end": "2017-11"
+    },
+    {
+      "id": "siluma",
+      "employer": "SILUMA s.r.o.",
+      "start": "2015-10",
+      "end": "2015-10"
+    },
+    {
+      "id": "isometall",
+      "employer": "Isometall s.r.o. – zemné vruty",
+      "start": "2015-05",
+      "end": "2017-09"
+    },
+    {
+      "id": "pellets",
+      "employer": "Výroba peletovacích zariadení, Veľká Lomnica",
+      "start": "2014-12",
+      "end": "2015-05"
+    },
+    {
+      "id": "dairy",
+      "employer": "Tatranská mliekareň a.s.",
+      "start": "2014-11",
+      "end": "2014-11"
+    },
+    {
+      "id": "roofing",
+      "employer": "Chicago (USA)",
+      "start": "2014-08",
+      "end": "2014-11"
+    },
+    {
+      "id": "onyx",
+      "employer": "Onyx Poprad",
+      "start": "2014-06",
+      "end": "2014-07"
+    },
+    {
+      "id": "taminet",
+      "employer": "TamiNet",
+      "start": "2009-02",
+      "end": "2009-10"
+    }
+  ],
+  "locales": {
+    "sk": {
+      "jobs": {
+        "telemarcom": {
+          "role": "Pracovník zákazníckej podpory a reklamácií (SZČO)",
+          "bullets": [
+            "Telefonická a e-mailová podpora, spracovanie reklamácií produktov značiek Singer, Sanitas a Optimex.",
+            "Komunikácia s obchodnými reťazcami Kaufland, Lidl a Aldi v rámci EÚ."
+          ]
+        },
+        "muller-2021": {
+          "role": "Komisionér / skladový pracovník",
+          "bullets": [
+            "Vychystávanie objednávok pomocou skenera, balenie a etiketovanie zásielok.",
+            "Príjem a výdaj tovaru, paletizácia, udržiavanie poriadku a plnenie výkonových noriem."
+          ]
+        },
+        "baur": {
+          "role": "Komisionér",
+          "bullets": [
+            "Zbieranie objednávok a príprava zásielok"
+          ]
+        },
+        "rewe": {
+          "role": "Komisionér",
+          "bullets": [
+            "Zbieranie objednávok na slúchadlovom systéme v obchodnom reťazci REWE"
+          ]
+        },
+        "mytoys": {
+          "role": "Pomocný pracovník v sklade",
+          "bullets": [
+            "Pomocné práce v sklade (vychystávanie, balenie podľa potreby)"
+          ]
+        },
+        "muller-2019": {
+          "role": "Komisionér",
+          "bullets": [
+            "Práca so skenerom v sklade, zbieranie objednávok"
+          ]
+        },
+        "lidl": {
+          "role": "Balenie a triedenie výrobkov",
+          "bullets": [
+            "Balenie a triedenie zásielok pomocou skenera; pomocné skladové práce."
+          ]
+        },
+        "muller-2018": {
+          "role": "Komisionér",
+          "bullets": [
+            "Zber objednávok so skenerom podľa denných KPI"
+          ]
+        },
+        "hermes": {
+          "role": "Pomocný pracovník v sklade",
+          "bullets": [
+            "Práca so skenerom, inventúra tovaru"
+          ]
+        },
+        "muller-2017": {
+          "role": "Komisionér",
+          "bullets": [
+            "Zbieranie objednávok, práca so skenerom"
+          ]
+        },
+        "zibura": {
+          "role": "Zámočnícke práce / zvárač CO₂",
+          "bullets": [
+            "Zváranie, brúsenie, rezanie, vŕtanie, práca na sústruhu, montáže na území SR"
+          ]
+        },
+        "siluma": {
+          "role": "Zámočnícke práce / zvárač CO₂",
+          "bullets": [
+            "Zváranie, brúsenie, vŕtanie"
+          ]
+        },
+        "isometall": {
+          "role": "Zámočnícke práce / zvárač CO₂",
+          "bullets": [
+            "Zváranie, práca na sústruhu, montáže"
+          ]
+        },
+        "pellets": {
+          "role": "Zámočnícke práce / zvárač CO₂",
+          "bullets": [
+            "Zváranie, dielenské práce"
+          ]
+        },
+        "dairy": {
+          "role": "Pomocný pracovník",
+          "bullets": []
+        },
+        "roofing": {
+          "role": "Pomocný pracovník na streche",
+          "bullets": [
+            "Pomocné práce pri pokládke škridiel a údržbe striech, práca v menšom tíme na rodinných domoch"
+          ]
+        },
+        "onyx": {
+          "role": "Finančný poradca",
+          "bullets": []
+        },
+        "taminet": {
+          "role": "Montáž internetu (brigáda)",
+          "bullets": [
+            "Montáž internetu na obytné domy"
+          ]
+        },
+        "deltrian": {
+          "role": "Pracovník výroby",
+          "bullets": [
+            "Rezanie, skladanie a vŕtanie hliníkových dielov.",
+            "Laserové označovanie dielov logom."
+          ]
+        }
+      },
+      "legacySections": {
+        "projects": "<h2 class=\"section__title\">Projekty</h2>\n            <div class=\"cards\">\n              <div class=\"card\">\n                <h3 class=\"card__title\">E‑commerce platforma (ProStore)</h3>\n                <p class=\"card__text\">\n                  Plne funkčný e‑shop s autentifikáciou, admin rozhraním,\n                  integráciou PayPal a Stripe, recenziami produktov,\n                  vyhľadávaním, košíkom a správou používateľských profilov\n                  (Next.js, React, PostgreSQL, Prisma, TypeScript).\n                </p>\n              </div>\n              <div class=\"card\">\n                <h3 class=\"card__title\" aria-hidden=\"true\"></h3>\n                <p class=\"card__text\">\n                  Kompletný zoznam mojich projektov nájdeš na mojom GitHub\n                  profile (frontend aj analytické projekty – Excel, Power Query,\n                  Power BI, Python).\n                </p>\n              </div>\n            </div>",
+        "hobby": "<h2 class=\"section__title\">Záľuby</h2>\n            <p>\n              Cyklistika, fitness, kalistenika, čítanie kníh, osobný rozvoj,\n              zdravý životný štýl, vzdelávanie sa.\n            </p>",
+        "skills": "<h2 class=\"section__title\">Zručnosti</h2>\n            <h3 class=\"sub\">Frameworky &amp; knižnice</h3>\n            <p class=\"muted\">\n              React (v19), Next.js (v15), TypeScript, JavaScript (ES6+), Zod,\n              shadcn/ui, React Hook Form, Next Auth\n            </p>\n            <h3 class=\"sub\">Backend &amp; databázy</h3>\n            <p class=\"muted\">Supabase, PostgreSQL, Prisma, REST API</p>\n            <h3 class=\"sub\">Platby &amp; Integrácie</h3>\n            <p class=\"muted\">PayPal API, Stripe API, JWT &amp; cookies</p>\n            <h3 class=\"sub\">Štýlovanie</h3>\n            <p class=\"muted\">HTML5, CSS3, Sass, Tailwind CSS</p>\n            <h3 class=\"sub\">Nástroje</h3>\n            <p class=\"muted\">\n              Git, GitHub, VS Code, NPM, Vercel, Netlify, ESLint, Jest\n            </p>\n            <h3 class=\"sub\">Metodológie</h3>\n            <p class=\"muted\">\n              Responzívny dizajn, základy agilného vývoja, TypeSafe kódovanie\n            </p>\n            <h3 class=\"sub\">Dáta &amp; Analytika</h3>\n            <p class=\"muted\">\n              Excel, Power Query, Power BI, SQL, Python, Git, GitHub\n            </p>\n            <h3 class=\"sub\">Logistika &amp; sklad</h3>\n            <p class=\"muted\">\n              Komisionovanie, balenie, etiketovanie, práca v skladoch v Nemecku,\n              5S/BOZP, paletizácia\n            </p>",
+        "education": "<h2 class=\"section__title\">Vzdelanie</h2>\n            <div class=\"edu\">\n              <div class=\"edu__item\">\n                <strong>\n                  Stredná odborná škola, Kušnierska brána 349/2, Kežmarok\n                </strong>\n                <div class=\"edu__meta\">2010 – 2014</div>\n                <div class=\"muted\">Mechanik počítačových sietí</div>\n              </div>\n              <div class=\"edu__item\">\n                <strong>Základná škola, Lendak</strong>\n                <div class=\"edu__meta\">2000 – 2009</div>\n              </div>\n            </div>",
+        "certificates": "<h2 class=\"section__title\">Certifikáty &amp; Kurzy</h2>\n            <ul class=\"list\">\n              <li>\n                ÚPSVR – RePass (Skillmea): Kurz „Data Analyst“ (07.07.2025 –\n                18.08.2025)\n              </li>\n              <li>\n                Samostatné štúdium (05/2025 – súčasnosť): Roadmapa Data\n                Analytics, vlastné mini projekty (správa úverov na auto,\n                evidencia a analýza nákladov na auto – tankovanie, servis,\n                prevádzka; nástroje: Excel, Power Query, Power BI, Python)\n              </li>\n              <li>\n                Udemy (2024 – 2025):\n                <ul class=\"list list--nested\">\n                  <li>Next.js E‑commerce Course (2025)</li>\n                  <li>The Ultimate React Course (2025)</li>\n                  <li>The Complete JavaScript Course (2024)</li>\n                  <li>Advanced CSS and Sass (2024)</li>\n                  <li>\n                    Design &amp; Develop Websites (HTML5 &amp; CSS3) (2024)\n                  </li>\n                  <li>Web Design Secrets (2024)</li>\n                  <li>Full Stack Crash Course (2024)</li>\n                </ul>\n              </li>\n              <li>\n                Learn2Code (2019 – 2021):\n                <ul class=\"list list--nested\">\n                  <li>Webrebel 1 (HTML, CSS, JavaScript)</li>\n                  <li>Základy programovania &amp; OOP, CSS/Sass</li>\n                  <li>Visual Design – Photoshop</li>\n                </ul>\n              </li>\n            </ul>",
+        "languages": "<h2 class=\"section__title\">Jazyky</h2>\n            <ul class=\"list\">\n              <li>Slovenčina: rodný</li>\n              <li>Čeština: pokročilý</li>\n              <li>Poľština: pokročilý</li>\n              <li>Angličtina: základy</li>\n            </ul>",
+        "additional-info": "<h2 class=\"section__title\">Ďalšie informácie</h2>\n            <ul class=\"list\">\n              <li>Vodičský preukaz: skupina B</li>\n              <li>Základné dielenské zručnosti (zámočníctvo, zváranie CO₂)</li>\n              <li>\n                Veľmi dobrá adaptabilita, pracovitosť, zodpovednosť, ochota učiť\n                sa nové veci\n              </li>\n            </ul>"
+      },
+      "skills": [
+        {
+          "name": "Výroba a dielenské práce",
+          "text": "Rezanie, skladanie a vŕtanie hliníkových dielov; laserové označovanie. Skúsenosti s brúsením, zváraním CO₂, sústruhom a montážami."
+        },
+        {
+          "name": "Logistika a sklad",
+          "text": "Vychystávanie objednávok, skener, balenie, etiketovanie, príjem a výdaj tovaru, paletizácia a inventúra."
+        },
+        {
+          "name": "Zákaznícka podpora",
+          "text": "Telefonická a e-mailová komunikácia, produktové reklamácie, komunikácia s obchodnými reťazcami."
+        },
+        {
+          "name": "Digitálne zručnosti",
+          "text": "Excel, Power Query, Power BI, SQL a Python — skúsenosti z kurzov a samostatného štúdia dátovej analytiky v roku 2025."
+        }
+      ],
+      "languages": [
+        "Slovenčina – materinský jazyk",
+        "Čeština – pokročilá",
+        "Poľština – pokročilá",
+        "Angličtina – základy"
+      ],
+      "education": [
+        {
+          "school": "Stredná odborná škola, Kežmarok",
+          "field": "Mechanik počítačových sietí",
+          "start": "2010",
+          "end": "2014"
+        }
+      ],
+      "courses": [
+        {
+          "name": "Data Analyst — Skillmea (RePass)",
+          "start": "07/2025",
+          "end": "08/2025"
+        }
+      ],
+      "driving": "Vodičský preukaz: skupina B.",
+      "labels": {
+        "title": "Životopis",
+        "experience": "Pracovné skúsenosti",
+        "earlier": "Predchádzajúce pracovné skúsenosti",
+        "skills": "Zručnosti",
+        "education": "Vzdelanie a vybrané kurzy",
+        "languages": "Jazyky",
+        "additional": "Ďalšie informácie",
+        "download": "Stiahnuť životopis (PDF)",
+        "print": "Vytlačiť životopis",
+        "variants": "Ďalšie verzie CV",
+        "contact": "Kontakt",
+        "back": "Späť na webový životopis",
+        "archive": "Projekty a ďalšie vzdelávanie",
+        "skip": "Prejsť na obsah",
+        "languageNav": "Jazyk životopisu"
+      },
+      "generalWeb": {
+        "maxPrintPages": 2,
+        "groupTitles": {
+          "warehouse": "Komisionér / skladový pracovník",
+          "metalwork": "Zámočnícke práce / zvárač CO₂"
+        },
+        "entryTexts": {
+          "muller": {
+            "description": "Vychystávanie objednávok pomocou skenera, balenie, etiketovanie, príjem a výdaj tovaru, paletizácia.",
+            "note": "Agentúrne pridelenia aj priamy pracovný pomer."
+          },
+          "baur": {
+            "description": "Vychystávanie objednávok a príprava zásielok."
+          },
+          "rewe": {
+            "description": "Vychystávanie objednávok pomocou hlasových pokynov cez slúchadlá."
+          },
+          "mytoys": {
+            "description": "Pomocné skladové práce, vychystávanie a balenie."
+          },
+          "lidl": {
+            "description": "Balenie a triedenie zásielok pomocou skenera."
+          },
+          "hermes": {
+            "description": "Práca so skenerom a inventúra tovaru."
+          },
+          "zibura": {
+            "description": "Zváranie, brúsenie, rezanie, vŕtanie, práca na sústruhu a montáže."
+          },
+          "isometall": {
+            "description": "Zváranie, práca na sústruhu a montáže."
+          },
+          "siluma": {
+            "description": "Zváranie, brúsenie a vŕtanie."
+          },
+          "pellets": {
+            "description": "Zváranie a dielenské práce."
+          }
+        },
+        "details": {
+          "deltrian": 2,
+          "telemarcom": 2
+        },
+        "sections": {
+          "projects": null,
+          "hobby": "<h2 class=\"section__title\">Záľuby</h2><p>Cyklistika, fitness, kalistenika, turistika v horách, čítanie kníh, osobný rozvoj, zdravý životný štýl, vzdelávanie sa.</p>",
+          "skills": "<h2 class=\"section__title\">Zručnosti</h2><div class=\"skill-item\"><h3 class=\"sub\">Výroba a dielenské práce</h3><p class=\"muted\">Rezanie, skladanie a vŕtanie hliníkových dielov; laserové označovanie. Skúsenosti s brúsením, zváraním CO₂, sústruhom a montážami.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Logistika a sklad</h3><p class=\"muted\">Vychystávanie objednávok, skener, balenie, etiketovanie, príjem a výdaj tovaru, paletizácia a inventúra.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Zákaznícka podpora</h3><p class=\"muted\">Telefonická a e-mailová komunikácia, produktové reklamácie, komunikácia s obchodnými reťazcami.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Digitálne zručnosti</h3><p class=\"muted\">Excel, Power Query, Power BI, SQL a Python — skúsenosti z kurzov a samostatného štúdia dátovej analytiky v roku 2025.</p></div>",
+          "education": "<h2 class=\"section__title\">Vzdelanie</h2><div class=\"edu\"><div class=\"edu__item\"><strong>Stredná odborná škola, Kežmarok</strong><div class=\"edu__meta\">2010 – 2014</div><div class=\"muted\">Mechanik počítačových sietí</div></div></div>",
+          "certificates": "<h2 class=\"section__title\">Kurzy a vzdelávanie</h2><ul class=\"list\"><li><strong>Skillmea – Data Analyst</strong><br>07.07.2025 – 18.08.2025<br>Kurz cez ÚPSVR/RePass; doplnkové samostatné štúdium dátovej analytiky v roku 2025.</li><li><strong>Udemy</strong><br>2024 – 2025<br>Kurzy webového vývoja.</li><li><strong>Learn2Code</strong><br>2019 – 2021<br>Webové technológie, základy programovania a grafického dizajnu.</li></ul>",
+          "languages": "<h2 class=\"section__title\">Jazyky</h2><ul class=\"list\"><li>Slovenčina – materinský jazyk</li><li>Čeština – pokročilá</li><li>Poľština – pokročilá</li><li>Angličtina – základy</li></ul>",
+          "additional-info": "<h2 class=\"section__title\">Ďalšie informácie</h2><ul class=\"list\"><li>Vodičský preukaz: skupina B.</li></ul>"
+        },
+        "experience": "Pracovné skúsenosti",
+        "contact": "Kontakt",
+        "continued": "pokračovanie",
+        "ui": {
+          "description": "Online životopis Františka Stolára – pracovné skúsenosti, zručnosti a vzdelanie.",
+          "skip": "Preskočiť na obsah",
+          "language": "Jazyk životopisu"
+        }
+      },
+      "employerDisplay": {
+        "pellets": "Výroba peletovacích zariadení, Veľká Lomnica",
+        "isometall": "Isometall s.r.o. – zemné vruty"
+      }
+    },
+    "cs": {
+      "jobs": {
+        "telemarcom": {
+          "role": "Pracovník zákaznické podpory a reklamací (OSVČ)",
+          "bullets": [
+            "Telefonická a e-mailová podpora, vyřizování reklamací produktů značek Singer, Sanitas a Optimex.",
+            "Komunikace s obchodními řetězci Kaufland, Lidl a Aldi v rámci EU."
+          ]
+        },
+        "muller-2021": {
+          "role": "Komisionář / Skladový pracovník",
+          "bullets": [
+            "Komisionování objednávek, práce se skenerem",
+            "Balení, etiketování, příjem/výdej zboží, paletizace",
+            "Udržování pořádku (5S), plnění výkonových norem"
+          ]
+        },
+        "baur": {
+          "role": "Komisionář",
+          "bullets": [
+            "Sběr objednávek a příprava zásilek"
+          ]
+        },
+        "rewe": {
+          "role": "Komisionář",
+          "bullets": [
+            "Komisionování s headsetovým systémem pro maloobchodní síť REWE"
+          ]
+        },
+        "mytoys": {
+          "role": "Pomocný pracovník ve skladu",
+          "bullets": [
+            "Pomocné skladové práce (vychystávání, balení dle potřeby)"
+          ]
+        },
+        "muller-2019": {
+          "role": "Komisionář",
+          "bullets": [
+            "Komisionování pomocí skeneru ve skladu"
+          ]
+        },
+        "lidl": {
+          "role": "Balení a třídění výrobků",
+          "bullets": [
+            "Balení do kartonů/sáčků, třídění pomocí skeneru, pomocné práce ve skladu"
+          ]
+        },
+        "muller-2018": {
+          "role": "Komisionář",
+          "bullets": [
+            "Komisionování objednávek podle denních KPI"
+          ]
+        },
+        "hermes": {
+          "role": "Pomocný pracovník ve skladu",
+          "bullets": [
+            "Obsluha skeneru, inventura zásob"
+          ]
+        },
+        "muller-2017": {
+          "role": "Komisionář",
+          "bullets": [
+            "Sběr objednávek, práce se skenerem"
+          ]
+        },
+        "zibura": {
+          "role": "Zámečník / Svářeč CO₂",
+          "bullets": [
+            "Sváření, broušení, řezání, vrtání, práce na soustruhu, montáže po SR"
+          ]
+        },
+        "siluma": {
+          "role": "Zámečník / Svářeč CO₂",
+          "bullets": [
+            "Sváření, broušení, vrtání"
+          ]
+        },
+        "isometall": {
+          "role": "Zámečník / Svářeč CO₂",
+          "bullets": [
+            "Sváření, práce na soustruhu, montáže"
+          ]
+        },
+        "pellets": {
+          "role": "Zámečník / Svářeč CO₂",
+          "bullets": [
+            "Sváření, dílenské práce"
+          ]
+        },
+        "dairy": {
+          "role": "Pomocný pracovník",
+          "bullets": []
+        },
+        "roofing": {
+          "role": "Pomocný pracovník na střeše",
+          "bullets": [
+            "Pomoc při pokládce tašek a údržbě střech; práce v malém týmu na rodinných domech"
+          ]
+        },
+        "onyx": {
+          "role": "Finanční poradce",
+          "bullets": []
+        },
+        "taminet": {
+          "role": "Montáž internetu (brigáda)",
+          "bullets": [
+            "Instalace internetového připojení do obytných domů"
+          ]
+        },
+        "deltrian": {
+          "bullets": [
+            "Řezání, sestavování a vrtání hliníkových dílů.",
+            "Laserové značení dílů logem."
+          ],
+          "role": "Pracovník výroby"
+        }
+      },
+      "legacySections": {
+        "projects": "<h2 class=\"section__title\">Projekty</h2>\n            <div class=\"cards\">\n              <div class=\"card\">\n                <h3 class=\"card__title\">E-commerce platforma (ProStore)</h3>\n                <p class=\"card__text\">\n                  Plně funkční e-shop s autentizací, administračním rozhraním,\n                  integrací PayPal a Stripe, recenzemi produktů, vyhledáváním,\n                  košíkem a správou uživatelských profilů (Next.js, React,\n                  PostgreSQL, Prisma, TypeScript).\n                </p>\n              </div>\n              <div class=\"card\">\n                <h3 class=\"card__title\" aria-hidden=\"true\"></h3>\n                <p class=\"card__text\">\n                  Kompletní seznam mých projektů najdeš na mém GitHub profilu\n                  (frontend i analytické projekty – Excel, Power Query, Power\n                  BI, Python).\n                </p>\n              </div>\n            </div>",
+        "hobby": "<h2 class=\"section__title\">Koníčky</h2>\n            <p>\n              Cyklistika, fitness, kalistenika, čtení knih, osobní rozvoj,\n              zdravý životní styl, celoživotní vzdělávání.\n            </p>",
+        "skills": "<h2 class=\"section__title\">Dovednosti</h2>\n\n            <h3 class=\"sub\">Frameworky &amp; knihovny</h3>\n            <p class=\"muted\">\n              React (v19), Next.js (v15), TypeScript, JavaScript (ES6+), Zod,\n              shadcn/ui, React Hook Form, Next Auth\n            </p>\n\n            <h3 class=\"sub\">Backend &amp; databáze</h3>\n            <p class=\"muted\">Supabase, PostgreSQL, Prisma, REST API</p>\n\n            <h3 class=\"sub\">Platby &amp; integrace</h3>\n            <p class=\"muted\">PayPal API, Stripe API, JWT &amp; cookies</p>\n\n            <h3 class=\"sub\">Stylování</h3>\n            <p class=\"muted\">HTML5, CSS3, Sass, Tailwind CSS</p>\n\n            <h3 class=\"sub\">Nástroje</h3>\n            <p class=\"muted\">\n              Git, GitHub, VS Code, NPM, Vercel, Netlify, ESLint, Jest\n            </p>\n\n            <h3 class=\"sub\">Metodiky</h3>\n            <p class=\"muted\">\n              Responzivní design, základy agilního vývoje, type-safe kódování\n            </p>\n\n            <h3 class=\"sub\">Data &amp; analytika</h3>\n            <p class=\"muted\">\n              Excel, Power Query, Power BI, SQL, Python, Git, GitHub\n            </p>\n\n            <h3 class=\"sub\">Logistika &amp; sklad</h3>\n            <p class=\"muted\">\n              Komisionování, balení, etiketování, práce ve skladech v Německu,\n              5S/BOZP, paletizace\n            </p>",
+        "education": "<h2 class=\"section__title\">Vzdělání</h2>\n            <div class=\"edu\">\n              <div class=\"edu__item\">\n                <strong>\n                  Střední odborná škola, Kušnierska brána 349/2, Kežmarok\n                </strong>\n                <div class=\"edu__meta\">2010 – 2014</div>\n                <div class=\"muted\">Mechanik počítačových sítí</div>\n              </div>\n              <div class=\"edu__item\">\n                <strong>Základní škola, Lendak</strong>\n                <div class=\"edu__meta\">2000 – 2009</div>\n              </div>\n            </div>",
+        "certificates": "<h2 class=\"section__title\">Certifikáty &amp; Kurzy</h2>\n            <ul class=\"list\">\n              <li>\n                ÚPSVR – RePass (Skillmea): kurz „Data Analyst“ (07.07.2025 –\n                18.08.2025)\n              </li>\n              <li>\n                Samostudium (05/2025 – současnost): roadmapa Data Analytics a\n                mini-projekty (správa úvěrů na auto, evidence a analýza nákladů\n                na auto – palivo, servis, provoz; nástroje: Excel, Power Query,\n                Power BI, Python)\n              </li>\n              <li>\n                Udemy (2024 – 2025):\n                <ul class=\"list list--nested\">\n                  <li>Next.js E-commerce Course (2025)</li>\n                  <li>The Ultimate React Course (2025)</li>\n                  <li>The Complete JavaScript Course (2024)</li>\n                  <li>Advanced CSS and Sass (2024)</li>\n                  <li>\n                    Design &amp; Develop Websites (HTML5 &amp; CSS3) (2024)\n                  </li>\n                  <li>Web Design Secrets (2024)</li>\n                  <li>Full Stack Crash Course (2024)</li>\n                </ul>\n              </li>\n              <li>\n                Learn2Code (2019 – 2021):\n                <ul class=\"list list--nested\">\n                  <li>Webrebel 1 (HTML, CSS, JavaScript)</li>\n                  <li>Základy programování &amp; OOP, CSS/Sass</li>\n                  <li>Visual Design – Photoshop</li>\n                </ul>\n              </li>\n            </ul>",
+        "languages": "<h2 class=\"section__title\">Jazyky</h2>\n            <ul class=\"list\">\n              <li>Slovenština – rodilý mluvčí</li>\n              <li>Čeština – pokročilá</li>\n              <li>Polština – pokročilá</li>\n              <li>Angličtina – základy</li>\n            </ul>",
+        "additional-info": "<h2 class=\"section__title\">Další informace</h2>\n            <ul class=\"list\">\n              <li>Řidičský průkaz: skupina B</li>\n              <li>Základní dílenské dovednosti (zámečnictví, svařování CO₂)</li>\n              <li>\n                Vysoká adaptabilita, pracovitost, odpovědnost, ochota učit se\n                nové věci\n              </li>\n            </ul>"
+      },
+      "employerDisplay": {
+        "pellets": "Výroba peletovacích zařízení, Veľká Lomnica",
+        "isometall": "Isometall s.r.o. – zemní vruty"
+      },
+      "skills": [
+        {
+          "name": "Výroba a dílenské práce",
+          "text": "Řezání, sestavování a vrtání hliníkových dílů; laserové značení. Zkušenosti s broušením, svařováním CO₂, soustruhem a montážemi."
+        },
+        {
+          "name": "Logistika a sklad",
+          "text": "Vychystávání objednávek, skener, balení, etiketování, příjem a výdej zboží, paletizace a inventura."
+        },
+        {
+          "name": "Zákaznická podpora",
+          "text": "Telefonická a e-mailová komunikace, reklamace produktů, komunikace s obchodními řetězci."
+        },
+        {
+          "name": "Digitální dovednosti",
+          "text": "Excel, Power Query, Power BI, SQL a Python — zkušenosti z kurzů a samostatného studia datové analytiky v roce 2025."
+        }
+      ],
+      "languages": [
+        "Slovenština – mateřský jazyk",
+        "Čeština – pokročilá",
+        "Polština – pokročilá",
+        "Angličtina – základy"
+      ],
+      "driving": "Řidičský průkaz: skupina B.",
+      "generalWeb": {
+        "maxPrintPages": 2,
+        "groupTitles": {
+          "warehouse": "Komisionář / skladový pracovník",
+          "metalwork": "Zámečnické práce / svářeč CO₂"
+        },
+        "entryTexts": {
+          "muller": {
+            "description": "Vychystávání objednávek pomocí skeneru, balení, etiketování, příjem a výdej zboží, paletizace.",
+            "note": "Agenturní přidělení i přímý pracovní poměr."
+          },
+          "baur": {
+            "description": "Vychystávání objednávek a příprava zásilek."
+          },
+          "rewe": {
+            "description": "Vychystávání objednávek podle hlasových pokynů ve sluchátkách."
+          },
+          "mytoys": {
+            "description": "Pomocné skladové práce, vychystávání a balení."
+          },
+          "lidl": {
+            "description": "Balení a třídění zásilek pomocí skeneru."
+          },
+          "hermes": {
+            "description": "Práce se skenerem a inventura zboží."
+          },
+          "zibura": {
+            "description": "Svařování, broušení, řezání, vrtání, práce na soustruhu a montáže."
+          },
+          "isometall": {
+            "description": "Svařování, práce na soustruhu a montáže."
+          },
+          "siluma": {
+            "description": "Svařování, broušení a vrtání."
+          },
+          "pellets": {
+            "description": "Svařování a dílenské práce."
+          }
+        },
+        "details": {
+          "deltrian": 2,
+          "telemarcom": 2
+        },
+        "sections": {
+          "projects": null,
+          "hobby": "<h2 class=\"section__title\">Zájmy</h2><p>Cyklistika, fitness, kalistenika, horská turistika, čtení knih, osobní rozvoj, zdravý životní styl, vzdělávání.</p>",
+          "skills": "<h2 class=\"section__title\">Dovednosti</h2><div class=\"skill-item\"><h3 class=\"sub\">Výroba a dílenské práce</h3><p class=\"muted\">Řezání, sestavování a vrtání hliníkových dílů; laserové značení. Zkušenosti s broušením, svařováním CO₂, soustruhem a montážemi.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Logistika a sklad</h3><p class=\"muted\">Vychystávání objednávek, skener, balení, etiketování, příjem a výdej zboží, paletizace a inventura.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Zákaznická podpora</h3><p class=\"muted\">Telefonická a e-mailová komunikace, reklamace produktů, komunikace s obchodními řetězci.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Digitální dovednosti</h3><p class=\"muted\">Excel, Power Query, Power BI, SQL a Python — zkušenosti z kurzů a samostatného studia datové analytiky v roce 2025.</p></div>",
+          "education": "<h2 class=\"section__title\">Vzdělání</h2><div class=\"edu\"><div class=\"edu__item\"><strong>Střední odborná škola, Kežmarok</strong><div class=\"edu__meta\">2010 – 2014</div><div class=\"muted\">Mechanik počítačových sítí</div></div></div>",
+          "certificates": "<h2 class=\"section__title\">Kurzy a vzdělávání</h2><ul class=\"list\"><li><strong>Skillmea – Data Analyst</strong><br>07.07.2025 – 18.08.2025<br>Kurz přes ÚPSVR/RePass; doplňkové samostudium datové analytiky v roce 2025.</li><li><strong>Udemy</strong><br>2024 – 2025<br>Kurzy webového vývoje.</li><li><strong>Learn2Code</strong><br>2019 – 2021<br>Webové technologie, základy programování a grafického designu.</li></ul>",
+          "languages": "<h2 class=\"section__title\">Jazyky</h2><ul class=\"list\"><li>Slovenština – mateřský jazyk</li><li>Čeština – pokročilá</li><li>Polština – pokročilá</li><li>Angličtina – základy</li></ul>",
+          "additional-info": "<h2 class=\"section__title\">Další informace</h2><ul class=\"list\"><li>Řidičský průkaz: skupina B.</li></ul>"
+        },
+        "experience": "Pracovní zkušenosti",
+        "contact": "Kontakt",
+        "continued": "pokračování",
+        "ui": {
+          "description": "Online životopis Františka Stolára – pracovní zkušenosti, dovednosti a vzdělání.",
+          "skip": "Přejít na obsah",
+          "language": "Jazyk životopisu"
+        }
+      }
+    },
+    "pl": {
+      "jobs": {
+        "telemarcom": {
+          "role": "Pracownik obsługi klienta i reklamacji (własna działalność gospodarcza)",
+          "bullets": [
+            "Telefoniczna i e-mailowa obsługa klienta oraz reklamacji produktów marek Singer, Sanitas i Optimex.",
+            "Kontakt z sieciami handlowymi Kaufland, Lidl i Aldi na terenie UE."
+          ]
+        },
+        "muller-2021": {
+          "role": "Komisjoner / Pracownik magazynowy",
+          "bullets": [
+            "Kompletowanie zamówień przy użyciu skanera",
+            "Pakowanie, etykietowanie, przyjęcia/wydania towaru, paletyzacja",
+            "Utrzymywanie porządku (5S) i realizacja norm wydajności"
+          ]
+        },
+        "baur": {
+          "role": "Komisjoner",
+          "bullets": [
+            "Zbieranie zamówień i przygotowanie wysyłek"
+          ]
+        },
+        "rewe": {
+          "role": "Komisjoner",
+          "bullets": [
+            "Kompletowanie zamówień z systemem słuchawkowym dla sieci REWE"
+          ]
+        },
+        "mytoys": {
+          "role": "Pomocnik magazynowy",
+          "bullets": [
+            "Prace pomocnicze w magazynie (komisjonowanie, pakowanie)"
+          ]
+        },
+        "muller-2019": {
+          "role": "Komisjoner",
+          "bullets": [
+            "Komisjonowanie przy pomocy skanera w magazynie"
+          ]
+        },
+        "lidl": {
+          "role": "Pakowanie i sortowanie produktów",
+          "bullets": [
+            "Pakowanie do kartonów/worków, sortowanie przy użyciu skanera, prace pomocnicze w magazynie"
+          ]
+        },
+        "muller-2018": {
+          "role": "Komisjoner",
+          "bullets": [
+            "Komisjonowanie zamówień według dziennych KPI"
+          ]
+        },
+        "hermes": {
+          "role": "Pomocnik magazynowy",
+          "bullets": [
+            "Obsługa skanera, inwentaryzacja towaru"
+          ]
+        },
+        "muller-2017": {
+          "role": "Komisjoner",
+          "bullets": [
+            "Zbieranie zamówień, obsługa skanera"
+          ]
+        },
+        "zibura": {
+          "role": "Ślusarz / Spawacz CO₂",
+          "bullets": [
+            "Spawanie, szlifowanie, cięcie, wiercenie, praca na tokarce, montaże na terenie SK"
+          ]
+        },
+        "siluma": {
+          "role": "Ślusarz / Spawacz CO₂",
+          "bullets": [
+            "Spawanie, szlifowanie, wiercenie"
+          ]
+        },
+        "isometall": {
+          "role": "Ślusarz / Spawacz CO₂",
+          "bullets": [
+            "Spawanie, praca na tokarce, montaże"
+          ]
+        },
+        "pellets": {
+          "role": "Ślusarz / Spawacz CO₂",
+          "bullets": [
+            "Spawanie, prace warsztatowe"
+          ]
+        },
+        "dairy": {
+          "role": "Pracownik pomocniczy",
+          "bullets": []
+        },
+        "roofing": {
+          "role": "Pomocnik przy pracach dekarskich",
+          "bullets": [
+            "Pomoc przy układaniu dachówek i konserwacji dachów; praca w małym zespole na domach jednorodzinnych"
+          ]
+        },
+        "onyx": {
+          "role": "Doradca finansowy",
+          "bullets": []
+        },
+        "taminet": {
+          "role": "Montaż instalacji internetowych (praca dorywcza)",
+          "bullets": [
+            "Montaż sieci internetowych w budynkach mieszkalnych"
+          ]
+        },
+        "deltrian": {
+          "bullets": [
+            "Cięcie, składanie i wiercenie elementów aluminiowych.",
+            "Laserowe znakowanie elementów logo."
+          ],
+          "role": "Pracownik produkcji"
+        }
+      },
+      "legacySections": {
+        "projects": "<h2 class=\"section__title\">Projekty</h2>\n\n            <div class=\"cards\">\n              <div class=\"card\">\n                <h3 class=\"card__title\">Platforma e-commerce (ProStore)</h3>\n                <p class=\"card__text\">\n                  W pełni funkcjonalny sklep internetowy z uwierzytelnianiem,\n                  panelem admina, integracją PayPal i Stripe, opiniami o\n                  produktach, wyszukiwarką, koszykiem i zarządzaniem profilami\n                  użytkowników (Next.js, React, PostgreSQL, Prisma, TypeScript).\n                </p>\n              </div>\n\n              <div class=\"card\">\n                <h3 class=\"card__title\" aria-hidden=\"true\"></h3>\n                <p class=\"card__text\">\n                  Pełną listę moich projektów znajdziesz na profilu GitHub\n                  (front-end i analityka – Excel, Power Query, Power BI,\n                  Python).\n                </p>\n              </div>\n            </div>",
+        "hobby": "<h2 class=\"section__title\">Hobby</h2>\n            <p>\n              Kolarstwo, fitness, kalistenika, czytanie książek, rozwój\n              osobisty, zdrowy styl życia, ciągłe uczenie się.\n            </p>",
+        "skills": "<h2 class=\"section__title\">Umiejętności</h2>\n\n            <h3 class=\"sub\">Frameworki &amp; biblioteki</h3>\n            <p class=\"muted\">\n              React (v19), Next.js (v15), TypeScript, JavaScript (ES6+), Zod,\n              shadcn/ui, React Hook Form, Next Auth\n            </p>\n\n            <h3 class=\"sub\">Backend &amp; Bazy danych</h3>\n            <p class=\"muted\">Supabase, PostgreSQL, Prisma, REST API</p>\n\n            <h3 class=\"sub\">Płatności &amp; Integracje</h3>\n            <p class=\"muted\">PayPal API, Stripe API, JWT &amp; cookies</p>\n\n            <h3 class=\"sub\">Stylowanie</h3>\n            <p class=\"muted\">HTML5, CSS3, Sass, Tailwind CSS</p>\n\n            <h3 class=\"sub\">Narzędzia</h3>\n            <p class=\"muted\">\n              Git, GitHub, VS Code, NPM, Vercel, Netlify, ESLint, Jest\n            </p>\n\n            <h3 class=\"sub\">Metodyki</h3>\n            <p class=\"muted\">\n              Responsive Design, podstawy Agile, pisanie typ-bezpiecznego kodu\n            </p>\n\n            <h3 class=\"sub\">Dane &amp; Analiza</h3>\n            <p class=\"muted\">\n              Excel, Power Query, Power BI, SQL, Python, Git, GitHub\n            </p>\n\n            <h3 class=\"sub\">Logistyka &amp; Magazyn</h3>\n            <p class=\"muted\">\n              Komisjonowanie, pakowanie, etykietowanie, praca w magazynach w\n              Niemczech, 5S/BHP, paletyzacja\n            </p>",
+        "education": "<h2 class=\"section__title\">Wykształcenie</h2>\n\n            <div class=\"edu\">\n              <div class=\"edu__item\">\n                <strong>\n                  Średnia Szkoła Zawodowa, Kušnierska brána 349/2, Kežmarok\n                </strong>\n                <div class=\"edu__meta\">2010 – 2014</div>\n                <div class=\"muted\">Technik sieci komputerowych</div>\n              </div>\n\n              <div class=\"edu__item\">\n                <strong>Szkoła Podstawowa, Lendak</strong>\n                <div class=\"edu__meta\">2000 – 2009</div>\n              </div>\n            </div>",
+        "certificates": "<h2 class=\"section__title\">Certyfikaty &amp; Kursy</h2>\n            <ul class=\"list\">\n              <li>\n                ÚPSVR – RePass (Skillmea): kurs „Data Analyst” (07.07.2025 –\n                18.08.2025)\n              </li>\n              <li>\n                Samokształcenie (05/2025 – obecnie): mapa drogowa Data Analytics\n                i mini-projekty (zarządzanie kredytem samochodowym; ewidencja i\n                analiza kosztów auta – paliwo, serwis, eksploatacja) z\n                wykorzystaniem Excel, Power Query, Power BI, Python\n              </li>\n              <li>\n                Udemy (2024 – 2025):\n                <ul class=\"list list--nested\">\n                  <li>Next.js E-commerce Course (2025)</li>\n                  <li>The Ultimate React Course (2025)</li>\n                  <li>The Complete JavaScript Course (2024)</li>\n                  <li>Advanced CSS and Sass (2024)</li>\n                  <li>\n                    Design &amp; Develop Websites (HTML5 &amp; CSS3) (2024)\n                  </li>\n                  <li>Web Design Secrets (2024)</li>\n                  <li>Full Stack Crash Course (2024)</li>\n                </ul>\n              </li>\n              <li>\n                Learn2Code (2019 – 2021):\n                <ul class=\"list list--nested\">\n                  <li>Webrebel 1 (HTML, CSS, JavaScript)</li>\n                  <li>Podstawy programowania &amp; OOP, CSS/Sass</li>\n                  <li>Visual Design – Photoshop</li>\n                </ul>\n              </li>\n            </ul>",
+        "languages": "<h2 class=\"section__title\">Języki</h2>\n            <ul class=\"list\">\n              <li>Słowacki – ojczysty</li>\n              <li>Czeski – zaawansowany</li>\n              <li>Polski – zaawansowany</li>\n              <li>Angielski – podstawowy</li>\n            </ul>",
+        "additional-info": "<h2 class=\"section__title\">Informacje dodatkowe</h2>\n            <ul class=\"list\">\n              <li>Prawo jazdy: kat. B</li>\n              <li>\n                Podstawowe umiejętności warsztatowe (ślusarstwo, spawanie CO₂)\n              </li>\n              <li>\n                Wysoka adaptacyjność, pracowitość, odpowiedzialność, chęć nauki\n                nowych rzeczy\n              </li>\n            </ul>"
+      },
+      "employerDisplay": {
+        "pellets": "Produkcja urządzeń do peletowania, Veľká Lomnica",
+        "isometall": "Isometall s.r.o. – wkręty gruntowe"
+      },
+      "skills": [
+        {
+          "name": "Produkcja i prace warsztatowe",
+          "text": "Cięcie, składanie i wiercenie elementów aluminiowych; znakowanie laserowe. Doświadczenie w szlifowaniu, spawaniu CO₂, pracy na tokarce i montażu."
+        },
+        {
+          "name": "Logistyka i magazyn",
+          "text": "Kompletacja zamówień, skaner, pakowanie, etykietowanie, przyjmowanie i wydawanie towaru, paletyzacja i inwentaryzacja."
+        },
+        {
+          "name": "Obsługa klienta",
+          "text": "Komunikacja telefoniczna i e-mailowa, reklamacje produktów, kontakt z sieciami handlowymi."
+        },
+        {
+          "name": "Umiejętności cyfrowe",
+          "text": "Excel, Power Query, Power BI, SQL i Python — doświadczenie zdobyte na kursach i podczas samodzielnej nauki analizy danych w 2025 roku."
+        }
+      ],
+      "languages": [
+        "Słowacki – język ojczysty",
+        "Czeski – zaawansowany",
+        "Polski – zaawansowany",
+        "Angielski – podstawowy"
+      ],
+      "driving": "Prawo jazdy: kategoria B.",
+      "generalWeb": {
+        "maxPrintPages": 2,
+        "groupTitles": {
+          "warehouse": "Pracownik kompletacji zamówień / magazynier",
+          "metalwork": "Prace ślusarskie / spawacz CO₂"
+        },
+        "entryTexts": {
+          "muller": {
+            "description": "Kompletacja zamówień ze skanerem, pakowanie, etykietowanie, przyjmowanie i wydawanie towaru, paletyzacja.",
+            "note": "Praca za pośrednictwem agencji oraz bezpośrednie zatrudnienie."
+          },
+          "baur": {
+            "description": "Kompletacja zamówień i przygotowywanie przesyłek."
+          },
+          "rewe": {
+            "description": "Kompletacja zamówień według poleceń głosowych przez słuchawki."
+          },
+          "mytoys": {
+            "description": "Pomocnicze prace magazynowe, kompletacja zamówień i pakowanie."
+          },
+          "lidl": {
+            "description": "Pakowanie i sortowanie przesyłek przy użyciu skanera."
+          },
+          "hermes": {
+            "description": "Praca ze skanerem i inwentaryzacja towaru."
+          },
+          "zibura": {
+            "description": "Spawanie, szlifowanie, cięcie, wiercenie, praca na tokarce i montaż."
+          },
+          "isometall": {
+            "description": "Spawanie, praca na tokarce i montaż."
+          },
+          "siluma": {
+            "description": "Spawanie, szlifowanie i wiercenie."
+          },
+          "pellets": {
+            "description": "Spawanie i prace warsztatowe."
+          }
+        },
+        "details": {
+          "deltrian": 2,
+          "telemarcom": 2
+        },
+        "sections": {
+          "projects": null,
+          "hobby": "<h2 class=\"section__title\">Zainteresowania</h2><p>Kolarstwo, fitness, kalistenika, turystyka górska, czytanie książek, rozwój osobisty, zdrowy styl życia, nauka.</p>",
+          "skills": "<h2 class=\"section__title\">Umiejętności</h2><div class=\"skill-item\"><h3 class=\"sub\">Produkcja i prace warsztatowe</h3><p class=\"muted\">Cięcie, składanie i wiercenie elementów aluminiowych; znakowanie laserowe. Doświadczenie w szlifowaniu, spawaniu CO₂, pracy na tokarce i montażu.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Logistyka i magazyn</h3><p class=\"muted\">Kompletacja zamówień, skaner, pakowanie, etykietowanie, przyjmowanie i wydawanie towaru, paletyzacja i inwentaryzacja.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Obsługa klienta</h3><p class=\"muted\">Komunikacja telefoniczna i e-mailowa, reklamacje produktów, kontakt z sieciami handlowymi.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Umiejętności cyfrowe</h3><p class=\"muted\">Excel, Power Query, Power BI, SQL i Python — doświadczenie zdobyte na kursach i podczas samodzielnej nauki analizy danych w 2025 roku.</p></div>",
+          "education": "<h2 class=\"section__title\">Wykształcenie</h2><div class=\"edu\"><div class=\"edu__item\"><strong>Średnia szkoła zawodowa, Kežmarok</strong><div class=\"edu__meta\">2010 – 2014</div><div class=\"muted\">Mechanik sieci komputerowych</div></div></div>",
+          "certificates": "<h2 class=\"section__title\">Kursy i szkolenia</h2><ul class=\"list\"><li><strong>Skillmea – Data Analyst</strong><br>07.07.2025 – 18.08.2025<br>Kurs w ramach ÚPSVR/RePass; uzupełniająca samodzielna nauka analizy danych w 2025 roku.</li><li><strong>Udemy</strong><br>2024 – 2025<br>Kursy tworzenia stron i aplikacji internetowych.</li><li><strong>Learn2Code</strong><br>2019 – 2021<br>Technologie internetowe, podstawy programowania i projektowania graficznego.</li></ul>",
+          "languages": "<h2 class=\"section__title\">Języki</h2><ul class=\"list\"><li>Słowacki – język ojczysty</li><li>Czeski – zaawansowany</li><li>Polski – zaawansowany</li><li>Angielski – podstawowy</li></ul>",
+          "additional-info": "<h2 class=\"section__title\">Dodatkowe informacje</h2><ul class=\"list\"><li>Prawo jazdy: kategoria B.</li></ul>"
+        },
+        "experience": "Doświadczenie zawodowe",
+        "contact": "Kontakt",
+        "continued": "ciąg dalszy",
+        "ui": {
+          "description": "CV online – František Stolár. Doświadczenie zawodowe, umiejętności i wykształcenie.",
+          "skip": "Przejdź do treści",
+          "language": "Język CV"
+        }
+      }
+    },
+    "de": {
+      "jobs": {
+        "telemarcom": {
+          "role": "Mitarbeiter im Kundenservice und Reklamationsmanagement (selbstständig)",
+          "bullets": [
+            "Telefonischer und schriftlicher Kundenservice per E-Mail; Bearbeitung von Produktreklamationen für Singer, Sanitas und Optimex.",
+            "Kommunikation mit den Handelsketten Kaufland, Lidl und Aldi innerhalb der EU."
+          ]
+        },
+        "muller-2021": {
+          "role": "Kommissionierer / Lagerarbeiter",
+          "bullets": [
+            "Auftragskommissionierung mit Handscanner",
+            "Verpacken, Etikettieren, Warenein-/-ausgang, Palettierung",
+            "Ordnung nach 5S und Erfüllung von Leistungskennzahlen"
+          ]
+        },
+        "baur": {
+          "role": "Kommissionierer",
+          "bullets": [
+            "Zusammenstellen von Bestellungen und Versandvorbereitung"
+          ]
+        },
+        "rewe": {
+          "role": "Kommissionierer",
+          "bullets": [
+            "Headset-gesteuerte Kommissionierung für die REWE-Handelskette"
+          ]
+        },
+        "mytoys": {
+          "role": "Lagerhelfer",
+          "bullets": [
+            "Allgemeine Lagertätigkeiten (Kommissionieren, Verpacken)"
+          ]
+        },
+        "muller-2019": {
+          "role": "Kommissionierer",
+          "bullets": [
+            "Scanner-gestützte Auftragskommissionierung im Lager"
+          ]
+        },
+        "lidl": {
+          "role": "Verpackungs- und Sortierkraft",
+          "bullets": [
+            "Packen von Kartons/Säcken, Scanner-basierte Sortierung, unterstützende Lagertätigkeiten"
+          ]
+        },
+        "muller-2018": {
+          "role": "Kommissionierer",
+          "bullets": [
+            "Kommissionierung gemäß täglicher KPIs per Scanner"
+          ]
+        },
+        "hermes": {
+          "role": "Lagerhelfer",
+          "bullets": [
+            "Scanner-Bedienung, Bestandsinventuren"
+          ]
+        },
+        "muller-2017": {
+          "role": "Kommissionierer",
+          "bullets": [
+            "Auftragskommissionierung, Scanner-Bedienung"
+          ]
+        },
+        "zibura": {
+          "role": "Metallarbeiter / CO₂-Schweißer",
+          "bullets": [
+            "Schweißen, Schleifen, Schneiden, Bohren, Dreharbeiten, Montagen in der Slowakei"
+          ]
+        },
+        "siluma": {
+          "role": "Metallarbeiter / CO₂-Schweißer",
+          "bullets": [
+            "Schweißen, Schleifen, Bohren"
+          ]
+        },
+        "isometall": {
+          "role": "Metallarbeiter / CO₂-Schweißer",
+          "bullets": [
+            "Schweißen, Dreharbeiten, Montagen"
+          ]
+        },
+        "pellets": {
+          "role": "Metallarbeiter / CO₂-Schweißer",
+          "bullets": [
+            "Schweiß- und allgemeine Werkstattarbeiten"
+          ]
+        },
+        "dairy": {
+          "role": "Hilfsarbeiter",
+          "bullets": []
+        },
+        "roofing": {
+          "role": "Dachdeckerhelfer",
+          "bullets": [
+            "Unterstützung bei Dachziegelverlegung und Wartung; Arbeit im kleinen Team an Einfamilienhäusern"
+          ]
+        },
+        "onyx": {
+          "role": "Finanzberater",
+          "bullets": []
+        },
+        "taminet": {
+          "role": "Installation von Internetanschlüssen (Aushilfstätigkeit)",
+          "bullets": [
+            "Installation von Internetanschlüssen in Wohnhäusern"
+          ]
+        },
+        "deltrian": {
+          "bullets": [
+            "Schneiden, Zusammenbauen und Bohren von Aluminiumteilen.",
+            "Laserkennzeichnung von Bauteilen mit einem Logo."
+          ],
+          "role": "Produktionsmitarbeiter"
+        }
+      },
+      "legacySections": {
+        "projects": "<h2 class=\"section__title\">Projekte</h2>\n\n            <div class=\"cards\">\n              <div class=\"card\">\n                <h3 class=\"card__title\">E-Commerce-Plattform (ProStore)</h3>\n                <p class=\"card__text\">\n                  Voll funktionsfähiger Online-Shop mit Authentifizierung,\n                  Admin-Dashboard, PayPal- und Stripe-Integration,\n                  Produktbewertungen, Suche, Warenkorb und Benutzerverwaltung\n                  (Next.js, React, PostgreSQL, Prisma, TypeScript).\n                </p>\n              </div>\n\n              <div class=\"card\">\n                <h3 class=\"card__title\" aria-hidden=\"true\"></h3>\n                <p class=\"card__text\">\n                  Eine vollständige Liste meiner Projekte findest du auf meinem\n                  GitHub-Profil (Frontend und Analytics – Excel, Power Query,\n                  Power BI, Python).\n                </p>\n              </div>\n            </div>",
+        "hobby": "<h2 class=\"section__title\">Hobbys</h2>\n            <p>\n              Radfahren, Fitness, Calisthenics, Lesen, persönliche\n              Weiterentwicklung, gesunder Lebensstil, lebenslanges Lernen.\n            </p>",
+        "skills": "<h2 class=\"section__title\">Fähigkeiten</h2>\n\n            <h3 class=\"sub\">Frameworks &amp; Bibliotheken</h3>\n            <p class=\"muted\">\n              React (v19), Next.js (v15), TypeScript, JavaScript (ES6+), Zod,\n              shadcn/ui, React Hook Form, Next Auth\n            </p>\n\n            <h3 class=\"sub\">Backend &amp; Datenbanken</h3>\n            <p class=\"muted\">Supabase, PostgreSQL, Prisma, REST API</p>\n\n            <h3 class=\"sub\">Zahlungen &amp; Integrationen</h3>\n            <p class=\"muted\">PayPal API, Stripe API, JWT &amp; Cookies</p>\n\n            <h3 class=\"sub\">Gestaltung</h3>\n            <p class=\"muted\">HTML5, CSS3, Sass, Tailwind CSS</p>\n\n            <h3 class=\"sub\">Werkzeuge</h3>\n            <p class=\"muted\">\n              Git, GitHub, VS Code, NPM, Vercel, Netlify, ESLint, Jest\n            </p>\n\n            <h3 class=\"sub\">Methoden</h3>\n            <p class=\"muted\">\n              Responsive Design, grundlegende agile Vorgehensweisen,\n              typensicheres Coden\n            </p>\n\n            <h3 class=\"sub\">Daten &amp; Analytik</h3>\n            <p class=\"muted\">\n              Excel, Power Query, Power BI, SQL, Python, Git, GitHub\n            </p>\n\n            <h3 class=\"sub\">Logistik &amp; Lager</h3>\n            <p class=\"muted\">\n              Kommissionieren, Verpacken, Etikettieren, Lagerarbeit in\n              Deutschland, 5S/Arbeitsschutz, Palettierung\n            </p>",
+        "education": "<h2 class=\"section__title\">Ausbildung</h2>\n\n            <div class=\"edu\">\n              <div class=\"edu__item\">\n                <strong>\n                  Fachmittelschule, Kušnierska brána 349/2, Kežmarok\n                </strong>\n                <div class=\"edu__meta\">2010 – 2014</div>\n                <div class=\"muted\">Techniker für Computernetzwerke</div>\n              </div>\n\n              <div class=\"edu__item\">\n                <strong>Grundschule, Lendak</strong>\n                <div class=\"edu__meta\">2000 – 2009</div>\n              </div>\n            </div>",
+        "certificates": "<h2 class=\"section__title\">Zertifikate &amp; Kurse</h2>\n            <ul class=\"list\">\n              <li>\n                ÚPSVR – RePass (Skillmea): Kurs „Data Analyst“ (07.07.2025 –\n                18.08.2025)\n              </li>\n              <li>\n                Selbststudium (05/2025 – heute): Data-Analytics-Roadmap und\n                Mini-Projekte (Kfz-Kreditverwaltung; Kosten­erfassung &amp;\n                -analyse – Kraftstoff, Wartung, Betrieb) mit Excel, Power Query,\n                Power BI, Python\n              </li>\n              <li>\n                Udemy (2024 – 2025):\n                <ul class=\"list list--nested\">\n                  <li>Next.js E-Commerce Course (2025)</li>\n                  <li>The Ultimate React Course (2025)</li>\n                  <li>The Complete JavaScript Course (2024)</li>\n                  <li>Advanced CSS and Sass (2024)</li>\n                  <li>\n                    Design &amp; Develop Websites (HTML5 &amp; CSS3) (2024)\n                  </li>\n                  <li>Web Design Secrets (2024)</li>\n                  <li>Full Stack Crash Course (2024)</li>\n                </ul>\n              </li>\n              <li>\n                Learn2Code (2019 – 2021):\n                <ul class=\"list list--nested\">\n                  <li>Webrebel 1 (HTML, CSS, JavaScript)</li>\n                  <li>Programmiergrundlagen &amp; OOP, CSS/Sass</li>\n                  <li>Visual Design – Photoshop</li>\n                </ul>\n              </li>\n            </ul>",
+        "languages": "<h2 class=\"section__title\">Sprachen</h2>\n            <ul class=\"list\">\n              <li>Slowakisch – Muttersprache</li>\n              <li>Tschechisch – Fortgeschritten</li>\n              <li>Polnisch – Fortgeschritten</li>\n              <li>Englisch – Grundkenntnisse</li>\n            </ul>",
+        "additional-info": "<h2 class=\"section__title\">Weitere Informationen</h2>\n            <ul class=\"list\">\n              <li>Führerschein: Klasse B</li>\n              <li>\n                Grundlegende Werkstattkenntnisse (Schlosserei, CO₂-Schweißen)\n              </li>\n              <li>\n                Hohe Anpassungsfähigkeit, Einsatzbereitschaft,\n                Verantwortungsbewusstsein, Lernfreude\n              </li>\n            </ul>"
+      },
+      "employerDisplay": {
+        "pellets": "Herstellung von Pelletieranlagen, Veľká Lomnica",
+        "isometall": "Isometall s.r.o. – Schraubfundamente"
+      },
+      "skills": [
+        {
+          "name": "Produktion und Werkstatt",
+          "text": "Schneiden, Zusammenbauen und Bohren von Aluminiumteilen; Laserkennzeichnung. Erfahrung mit Schleifen, CO₂-Schweißen, Drehmaschinen und Montagearbeiten."
+        },
+        {
+          "name": "Logistik und Lager",
+          "text": "Kommissionieren, Scanner, Verpacken, Etikettieren, Wareneingang und Warenausgang, Palettieren und Inventur."
+        },
+        {
+          "name": "Kundenservice",
+          "text": "Telefonische Kommunikation und E-Mail-Korrespondenz, Produktreklamationen, Kontakt mit Handelsketten."
+        },
+        {
+          "name": "Digitale Kenntnisse",
+          "text": "Excel, Power Query, Power BI, SQL und Python — Erfahrung aus Kursen und dem Selbststudium der Datenanalyse im Jahr 2025."
+        }
+      ],
+      "languages": [
+        "Slowakisch – Muttersprache",
+        "Tschechisch – fortgeschrittene Kenntnisse",
+        "Polnisch – fortgeschrittene Kenntnisse",
+        "Englisch – Grundkenntnisse"
+      ],
+      "driving": "Führerschein: Klasse B.",
+      "generalWeb": {
+        "maxPrintPages": 2,
+        "groupTitles": {
+          "warehouse": "Kommissionierer / Lagermitarbeiter",
+          "metalwork": "Schlosserarbeiten / CO₂-Schweißer"
+        },
+        "entryTexts": {
+          "muller": {
+            "description": "Kommissionieren mit Scanner, Verpacken, Etikettieren, Wareneingang und Warenausgang sowie Palettieren.",
+            "note": "Einsätze über Zeitarbeitsfirmen sowie direkte Anstellung."
+          },
+          "baur": {
+            "description": "Kommissionieren und Vorbereiten von Sendungen."
+          },
+          "rewe": {
+            "description": "Kommissionieren nach Sprachanweisungen über ein Headset."
+          },
+          "mytoys": {
+            "description": "Unterstützende Lagerarbeiten, Kommissionieren und Verpacken."
+          },
+          "lidl": {
+            "description": "Verpacken und Sortieren von Sendungen mit Scanner."
+          },
+          "hermes": {
+            "description": "Arbeit mit Scanner und Wareninventur."
+          },
+          "zibura": {
+            "description": "Schweißen, Schleifen, Schneiden, Bohren, Arbeiten an der Drehmaschine und Montage."
+          },
+          "isometall": {
+            "description": "Schweißen, Arbeiten an der Drehmaschine und Montage."
+          },
+          "siluma": {
+            "description": "Schweißen, Schleifen und Bohren."
+          },
+          "pellets": {
+            "description": "Schweiß- und Werkstattarbeiten."
+          }
+        },
+        "details": {
+          "deltrian": 2,
+          "telemarcom": 2
+        },
+        "sections": {
+          "projects": null,
+          "hobby": "<h2 class=\"section__title\">Interessen</h2><p>Radfahren, Fitness, Calisthenics, Bergwandern, Lesen, persönliche Weiterentwicklung, gesunder Lebensstil, Lernen.</p>",
+          "skills": "<h2 class=\"section__title\">Kenntnisse</h2><div class=\"skill-item\"><h3 class=\"sub\">Produktion und Werkstatt</h3><p class=\"muted\">Schneiden, Zusammenbauen und Bohren von Aluminiumteilen; Laserkennzeichnung. Erfahrung mit Schleifen, CO₂-Schweißen, Drehmaschinen und Montagearbeiten.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Logistik und Lager</h3><p class=\"muted\">Kommissionieren, Scanner, Verpacken, Etikettieren, Wareneingang und Warenausgang, Palettieren und Inventur.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Kundenservice</h3><p class=\"muted\">Telefonische Kommunikation und E-Mail-Korrespondenz, Produktreklamationen, Kontakt mit Handelsketten.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Digitale Kenntnisse</h3><p class=\"muted\">Excel, Power Query, Power BI, SQL und Python — Erfahrung aus Kursen und dem Selbststudium der Datenanalyse im Jahr 2025.</p></div>",
+          "education": "<h2 class=\"section__title\">Ausbildung</h2><div class=\"edu\"><div class=\"edu__item\"><strong>Berufsbildende Sekundarschule, Kežmarok</strong><div class=\"edu__meta\">2010 – 2014</div><div class=\"muted\">Fachrichtung: Mechaniker für Computernetzwerke</div></div></div>",
+          "certificates": "<h2 class=\"section__title\">Kurse und Weiterbildung</h2><ul class=\"list\"><li><strong>Skillmea – Data Analyst</strong><br>07.07.2025 – 18.08.2025<br>Kurs über ÚPSVR/RePass; ergänzendes Selbststudium der Datenanalyse im Jahr 2025.</li><li><strong>Udemy</strong><br>2024 – 2025<br>Kurse in Webentwicklung.</li><li><strong>Learn2Code</strong><br>2019 – 2021<br>Webtechnologien, Grundlagen der Programmierung und des Grafikdesigns.</li></ul>",
+          "languages": "<h2 class=\"section__title\">Sprachkenntnisse</h2><ul class=\"list\"><li>Slowakisch – Muttersprache</li><li>Tschechisch – fortgeschrittene Kenntnisse</li><li>Polnisch – fortgeschrittene Kenntnisse</li><li>Englisch – Grundkenntnisse</li></ul>",
+          "additional-info": "<h2 class=\"section__title\">Weitere Informationen</h2><ul class=\"list\"><li>Führerschein: Klasse B.</li></ul>"
+        },
+        "experience": "Berufserfahrung",
+        "contact": "Kontakt",
+        "continued": "Fortsetzung",
+        "ui": {
+          "description": "Online-Lebenslauf von František Stolár – Berufserfahrung, Kenntnisse und Ausbildung.",
+          "skip": "Zum Inhalt springen",
+          "language": "Sprache des Lebenslaufs"
+        }
+      }
+    },
+    "en": {
+      "jobs": {
+        "telemarcom": {
+          "role": "Customer Support and Product Claims Agent (self-employed)",
+          "bullets": [
+            "Telephone and email support; handling product claims for Singer, Sanitas and Optimex.",
+            "Communication with the retail chains Kaufland, Lidl and Aldi across the EU."
+          ]
+        },
+        "muller-2021": {
+          "role": "Order Picker / Warehouse Operative",
+          "bullets": [
+            "Order picking with handheld scanner",
+            "Packing, labelling, goods in/out, palletising",
+            "Maintaining order (5S) and meeting performance targets"
+          ]
+        },
+        "baur": {
+          "role": "Order Picker",
+          "bullets": [
+            "Collecting orders and preparing shipments"
+          ]
+        },
+        "rewe": {
+          "role": "Order Picker",
+          "bullets": [
+            "Headset-guided order picking for the REWE supermarket chain"
+          ]
+        },
+        "mytoys": {
+          "role": "Warehouse Assistant",
+          "bullets": [
+            "General warehouse duties (picking, packing as required)"
+          ]
+        },
+        "muller-2019": {
+          "role": "Order Picker",
+          "bullets": [
+            "Scanner-based order picking in the warehouse"
+          ]
+        },
+        "lidl": {
+          "role": "Packing & Sorting Operative",
+          "bullets": [
+            "Box and polybag packing, scanner-assisted sorting, general warehouse tasks"
+          ]
+        },
+        "muller-2018": {
+          "role": "Order Picker",
+          "bullets": [
+            "Scanner picking in line with daily KPIs"
+          ]
+        },
+        "hermes": {
+          "role": "Warehouse Assistant",
+          "bullets": [
+            "Scanner operation; stock inventory counts"
+          ]
+        },
+        "muller-2017": {
+          "role": "Order Picker",
+          "bullets": [
+            "Order picking, scanner operation"
+          ]
+        },
+        "zibura": {
+          "role": "Metalworker / CO₂ Welder",
+          "bullets": [
+            "Welding, grinding, cutting, drilling, lathe work; on-site assembly in Slovakia"
+          ]
+        },
+        "siluma": {
+          "role": "Metalworker / CO₂ Welder",
+          "bullets": [
+            "Welding, grinding, drilling"
+          ]
+        },
+        "isometall": {
+          "role": "Metalworker / CO₂ Welder",
+          "bullets": [
+            "Welding, lathe work, installations"
+          ]
+        },
+        "pellets": {
+          "role": "Metalworker / CO₂ Welder",
+          "bullets": [
+            "Welding, general workshop duties"
+          ]
+        },
+        "dairy": {
+          "role": "General Assistant",
+          "bullets": []
+        },
+        "roofing": {
+          "role": "Roofing Assistant",
+          "bullets": [
+            "Assisting with roof-tile installation and maintenance; working in a small team on residential homes"
+          ]
+        },
+        "onyx": {
+          "role": "Financial Adviser",
+          "bullets": []
+        },
+        "taminet": {
+          "role": "Internet Connection Installer (casual work)",
+          "bullets": [
+            "Installing internet connections in apartment buildings"
+          ]
+        },
+        "deltrian": {
+          "bullets": [
+            "Cutting, assembling and drilling aluminium parts.",
+            "Laser marking of parts with a logo."
+          ],
+          "role": "Production Operative"
+        }
+      },
+      "legacySections": {
+        "projects": "<h2 class=\"section__title\">Projects</h2>\n\n            <div class=\"cards\">\n              <div class=\"card\">\n                <h3 class=\"card__title\">E-commerce Platform (ProStore)</h3>\n                <p class=\"card__text\">\n                  Fully functional e-shop with authentication, admin dashboard,\n                  PayPal &amp; Stripe integration, product reviews, search,\n                  shopping basket and user-profile management (Next.js, React,\n                  PostgreSQL, Prisma, TypeScript).\n                </p>\n              </div>\n\n              <div class=\"card\">\n                <h3 class=\"card__title\" aria-hidden=\"true\"></h3>\n                <p class=\"card__text\">\n                  A complete list of my projects is available on my GitHub\n                  profile (front-end and analytics – Excel, Power Query, Power\n                  BI, Python).\n                </p>\n              </div>\n            </div>",
+        "hobby": "<h2 class=\"section__title\">Hobbies</h2>\n            <p>\n              Cycling, fitness, calisthenics, reading, personal development,\n              healthy lifestyle, lifelong learning.\n            </p>",
+        "skills": "<h2 class=\"section__title\">Skills</h2>\n\n            <h3 class=\"sub\">Frameworks &amp; Libraries</h3>\n            <p class=\"muted\">\n              React (v19), Next.js (v15), TypeScript, JavaScript (ES6+), Zod,\n              shadcn/ui, React Hook Form, Next Auth\n            </p>\n\n            <h3 class=\"sub\">Backend &amp; Database</h3>\n            <p class=\"muted\">Supabase, PostgreSQL, Prisma, REST API</p>\n\n            <h3 class=\"sub\">Payments &amp; Integrations</h3>\n            <p class=\"muted\">PayPal API, Stripe API, JWT &amp; cookies</p>\n\n            <h3 class=\"sub\">Styling</h3>\n            <p class=\"muted\">HTML5, CSS3, Sass, Tailwind CSS</p>\n\n            <h3 class=\"sub\">Tools</h3>\n            <p class=\"muted\">\n              Git, GitHub, VS Code, NPM, Vercel, Netlify, ESLint, Jest\n            </p>\n\n            <h3 class=\"sub\">Methodologies</h3>\n            <p class=\"muted\">\n              Responsive design, basic agile practices, type-safe coding\n            </p>\n\n            <h3 class=\"sub\">Data &amp; Analytics</h3>\n            <p class=\"muted\">\n              Excel, Power Query, Power BI, SQL, Python, Git, GitHub\n            </p>\n\n            <h3 class=\"sub\">Logistics &amp; Warehousing</h3>\n            <p class=\"muted\">\n              Order picking, packing, labelling, warehouse work in Germany,\n              5S/OSH, palletising\n            </p>",
+        "education": "<h2 class=\"section__title\">Education</h2>\n\n            <div class=\"edu\">\n              <div class=\"edu__item\">\n                <strong>\n                  Secondary Vocational School, Kušnierska brána 349/2, Kežmarok\n                </strong>\n                <div class=\"edu__meta\">2010 – 2014</div>\n                <div class=\"muted\">Computer Network Technician</div>\n              </div>\n\n              <div class=\"edu__item\">\n                <strong>Elementary School, Lendak</strong>\n                <div class=\"edu__meta\">2000 – 2009</div>\n              </div>\n            </div>",
+        "certificates": "<h2 class=\"section__title\">Certificates &amp; Courses</h2>\n            <ul class=\"list\">\n              <li>\n                ÚPSVR – RePass (Skillmea): “Data Analyst” course (07 Jul 2025 –\n                18 Aug 2025)\n              </li>\n              <li>\n                Self-study (05/2025 – present): Data Analytics roadmap and mini\n                projects (car-loan management; cost tracking &amp; analysis –\n                fuel, service, operation) using Excel, Power Query, Power BI,\n                Python\n              </li>\n              <li>\n                Udemy (2024 – 2025):\n                <ul class=\"list list--nested\">\n                  <li>Next.js E-commerce Course (2025)</li>\n                  <li>The Ultimate React Course (2025)</li>\n                  <li>The Complete JavaScript Course (2024)</li>\n                  <li>Advanced CSS and Sass (2024)</li>\n                  <li>\n                    Design &amp; Develop Websites (HTML5 &amp; CSS3) (2024)\n                  </li>\n                  <li>Web Design Secrets (2024)</li>\n                  <li>Full Stack Crash Course (2024)</li>\n                </ul>\n              </li>\n              <li>\n                Learn2Code (2019 – 2021):\n                <ul class=\"list list--nested\">\n                  <li>Webrebel 1 (HTML, CSS, JavaScript)</li>\n                  <li>Programming Fundamentals &amp; OOP, CSS/Sass</li>\n                  <li>Visual Design – Photoshop</li>\n                </ul>\n              </li>\n            </ul>",
+        "languages": "<h2 class=\"section__title\">Languages</h2>\n            <ul class=\"list\">\n              <li>Slovak – native</li>\n              <li>Czech – advanced</li>\n              <li>Polish – advanced</li>\n              <li>English – basic</li>\n            </ul>",
+        "additional-info": "<h2 class=\"section__title\">Additional Info</h2>\n            <ul class=\"list\">\n              <li>Driving licence: category B</li>\n              <li>Basic workshop skills (metalworking, CO₂ welding)</li>\n              <li>\n                Highly adaptable, hardworking, responsible, eager to learn new\n                things\n              </li>\n            </ul>"
+      },
+      "employerDisplay": {
+        "pellets": "Manufacture of pelletising equipment, Veľká Lomnica",
+        "isometall": "Isometall s.r.o. – ground screws"
+      },
+      "skills": [
+        {
+          "name": "Production and Workshop Skills",
+          "text": "Cutting, assembling and drilling aluminium parts; laser marking. Experience in grinding, CO₂ welding, lathe work and assembly."
+        },
+        {
+          "name": "Logistics and Warehousing",
+          "text": "Order picking, scanners, packing, labelling, goods receipt and dispatch, palletising and stocktaking."
+        },
+        {
+          "name": "Customer Support",
+          "text": "Telephone and email communication, product claims and communication with retail chains."
+        },
+        {
+          "name": "Digital Skills",
+          "text": "Excel, Power Query, Power BI, SQL and Python — experience gained through courses and independent study of data analytics in 2025."
+        }
+      ],
+      "languages": [
+        "Slovak – native",
+        "Czech – advanced",
+        "Polish – advanced",
+        "English – basic"
+      ],
+      "driving": "Driving licence: category B.",
+      "generalWeb": {
+        "maxPrintPages": 2,
+        "groupTitles": {
+          "warehouse": "Order Picker / Warehouse Operative",
+          "metalwork": "Metalwork / CO₂ Welding"
+        },
+        "entryTexts": {
+          "muller": {
+            "description": "Scanner-based order picking, packing, labelling, goods receipt and dispatch, and palletising.",
+            "note": "Agency assignments and direct employment."
+          },
+          "baur": {
+            "description": "Order picking and preparation of shipments."
+          },
+          "rewe": {
+            "description": "Order picking using voice instructions through a headset."
+          },
+          "mytoys": {
+            "description": "General warehouse duties, order picking and packing."
+          },
+          "lidl": {
+            "description": "Packing and sorting shipments using a scanner."
+          },
+          "hermes": {
+            "description": "Scanner operation and stocktaking."
+          },
+          "zibura": {
+            "description": "Welding, grinding, cutting, drilling, lathe work and assembly."
+          },
+          "isometall": {
+            "description": "Welding, lathe work and assembly."
+          },
+          "siluma": {
+            "description": "Welding, grinding and drilling."
+          },
+          "pellets": {
+            "description": "Welding and workshop duties."
+          }
+        },
+        "details": {
+          "deltrian": 2,
+          "telemarcom": 2
+        },
+        "sections": {
+          "projects": null,
+          "hobby": "<h2 class=\"section__title\">Interests</h2><p>Cycling, fitness, calisthenics, mountain hiking, reading, personal development, a healthy lifestyle and learning.</p>",
+          "skills": "<h2 class=\"section__title\">Skills</h2><div class=\"skill-item\"><h3 class=\"sub\">Production and Workshop Skills</h3><p class=\"muted\">Cutting, assembling and drilling aluminium parts; laser marking. Experience in grinding, CO₂ welding, lathe work and assembly.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Logistics and Warehousing</h3><p class=\"muted\">Order picking, scanners, packing, labelling, goods receipt and dispatch, palletising and stocktaking.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Customer Support</h3><p class=\"muted\">Telephone and email communication, product claims and communication with retail chains.</p></div><div class=\"skill-item\"><h3 class=\"sub\">Digital Skills</h3><p class=\"muted\">Excel, Power Query, Power BI, SQL and Python — experience gained through courses and independent study of data analytics in 2025.</p></div>",
+          "education": "<h2 class=\"section__title\">Education</h2><div class=\"edu\"><div class=\"edu__item\"><strong>Secondary Vocational School, Kežmarok</strong><div class=\"edu__meta\">2010 – 2014</div><div class=\"muted\">Computer Network Mechanic</div></div></div>",
+          "certificates": "<h2 class=\"section__title\">Courses and Training</h2><ul class=\"list\"><li><strong>Skillmea – Data Analyst</strong><br>07.07.2025 – 18.08.2025<br>Course through ÚPSVR/RePass; additional independent study of data analytics in 2025.</li><li><strong>Udemy</strong><br>2024 – 2025<br>Web development courses.</li><li><strong>Learn2Code</strong><br>2019 – 2021<br>Web technologies, programming fundamentals and graphic design basics.</li></ul>",
+          "languages": "<h2 class=\"section__title\">Languages</h2><ul class=\"list\"><li>Slovak – native</li><li>Czech – advanced</li><li>Polish – advanced</li><li>English – basic</li></ul>",
+          "additional-info": "<h2 class=\"section__title\">Additional Information</h2><ul class=\"list\"><li>Driving licence: category B.</li></ul>"
+        },
+        "experience": "Work Experience",
+        "contact": "Contact",
+        "continued": "continued",
+        "ui": {
+          "description": "Online CV of František Stolár – work experience, skills and education.",
+          "skip": "Skip to content",
+          "language": "CV language"
+        }
+      }
+    }
+  },
+  "review": {
+    "slovakContentApproved": false,
+    "slovakLayoutApproved": false,
+    "deltrianDatesConfirmed": true,
+    "translationsApproved": [],
+    "publishApproved": false,
+    "translationDraftsRequested": true
+  },
+  "documents": [
+    {
+      "id": "general",
+      "label": "Všeobecný životopis",
+      "pages": [
+        [
+          "deltrian",
+          "muller-2021",
+          "telemarcom",
+          "baur",
+          "rewe",
+          "mytoys",
+          "muller-2019",
+          "lidl",
+          "muller-2018",
+          "hermes",
+          "muller-2017"
+        ],
+        [
+          "zibura",
+          "isometall",
+          "siluma",
+          "pellets"
+        ]
+      ],
+      "details": {
+        "deltrian": 2,
+        "muller-2021": 2,
+        "telemarcom": 2
+      },
+      "skills": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "production",
+      "label": "Výroba a montáž",
+      "pages": [
+        [
+          "deltrian",
+          "muller-2021",
+          "telemarcom",
+          "baur",
+          "rewe",
+          "mytoys",
+          "muller-2019",
+          "lidl"
+        ],
+        [
+          "muller-2018",
+          "hermes",
+          "muller-2017",
+          "zibura",
+          "isometall",
+          "siluma",
+          "pellets"
+        ]
+      ],
+      "details": {
+        "deltrian": 2,
+        "muller-2021": 1,
+        "zibura": 1,
+        "isometall": 1,
+        "siluma": 1,
+        "pellets": 1
+      },
+      "skills": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "support",
+      "label": "Zákaznícka podpora",
+      "pages": [
+        [
+          "deltrian",
+          "muller-2021",
+          "telemarcom",
+          "baur",
+          "rewe",
+          "mytoys",
+          "muller-2019",
+          "lidl"
+        ],
+        [
+          "muller-2018",
+          "hermes",
+          "muller-2017",
+          "zibura",
+          "isometall",
+          "siluma",
+          "pellets"
+        ]
+      ],
+      "details": {
+        "deltrian": 1,
+        "telemarcom": 2,
+        "muller-2021": 1
+      },
+      "skills": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "logistics",
+      "label": "Sklad a logistika",
+      "pages": [
+        [
+          "deltrian",
+          "muller-2021",
+          "telemarcom",
+          "baur",
+          "rewe",
+          "mytoys",
+          "muller-2019",
+          "lidl"
+        ],
+        [
+          "muller-2018",
+          "hermes",
+          "muller-2017",
+          "zibura",
+          "isometall",
+          "siluma",
+          "pellets"
+        ]
+      ],
+      "details": {
+        "deltrian": 1,
+        "muller-2021": 2,
+        "rewe": 1,
+        "hermes": 1,
+        "lidl": 1
+      },
+      "skills": [
+        1,
+        0
+      ]
+    }
+  ],
+  "generalOrder": [
+    "deltrian",
+    "warehouse",
+    "telemarcom",
+    "metalwork",
+    "dairy",
+    "roofing",
+    "onyx",
+    "taminet"
+  ],
+  "generalGroups": [
+    {
+      "id": "warehouse",
+      "entries": [
+        {
+          "id": "muller",
+          "jobIds": [
+            "muller-2021",
+            "muller-2019",
+            "muller-2018",
+            "muller-2017"
+          ],
+          "employer": "Drogerie Dienst Müller"
+        },
+        {
+          "id": "baur",
+          "jobIds": [
+            "baur"
+          ]
+        },
+        {
+          "id": "rewe",
+          "jobIds": [
+            "rewe"
+          ]
+        },
+        {
+          "id": "mytoys",
+          "jobIds": [
+            "mytoys"
+          ]
+        },
+        {
+          "id": "lidl",
+          "jobIds": [
+            "lidl"
+          ]
+        },
+        {
+          "id": "hermes",
+          "jobIds": [
+            "hermes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metalwork",
+      "entries": [
+        {
+          "id": "zibura",
+          "jobIds": [
+            "zibura"
+          ]
+        },
+        {
+          "id": "isometall",
+          "jobIds": [
+            "isometall"
+          ]
+        },
+        {
+          "id": "siluma",
+          "jobIds": [
+            "siluma"
+          ]
+        },
+        {
+          "id": "pellets",
+          "jobIds": [
+            "pellets"
+          ]
+        }
+      ]
+    }
+  ]
+}

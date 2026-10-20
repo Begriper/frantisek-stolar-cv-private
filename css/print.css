@@ -1,141 +1,63 @@
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: transparent !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+  @page { size: A4; margin: 13mm 12mm; }
+  * { box-shadow: none !important; text-shadow: none !important; animation: none !important; transition: none !important; opacity: 1 !important; }
+  html { color-scheme: light; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  body { background: white; color: #17243b; font-size: 10.5pt; line-height: 1.4; }
+  .container { width: 100%; max-width: none; padding: 0; margin: 0; }
+  .lang-switch, .skip-link, .footer { display: none !important; }
+  .hero { display: flex; flex-direction: row; justify-content: flex-start; gap: 7mm; padding: 0 0 6mm; break-inside: avoid; }
+  .hero__text { text-align: left; flex: 1; }
+  .hero__name { font-size: 26pt; line-height: 1.15; margin: 0; }
+  .avatar { width: 27mm; height: 27mm; border: .5mm solid #e2e8f0; }
+  .avatar__img { transform: scale(var(--avatar-zoom)); }
+  .resume-card { padding: 0; margin: 0; border: 0; border-radius: 0; background: transparent; }
+  .resume-grid { display: grid; grid-template-columns: minmax(0, 68fr) minmax(0, 32fr); gap: 6mm; align-items: start; }
+  .col-main, .col-aside, .section { display: block; min-width: 0; }
+  .section { margin-bottom: 6mm; break-inside: auto; }
+  .section__title { font-size: 12pt; line-height: 1.2; color: #2563eb; padding-bottom: 1.8mm; margin: 0 0 3mm; border-bottom: .4mm solid #dfe7f3; break-after: avoid; }
+  .exp-item, .card, .edu__item { display: block; border: .25mm solid #dce4ef; border-radius: 3mm; background: #f8fafc; padding: 3mm; margin: 0 0 3mm; break-inside: avoid; transform: none !important; }
+  .exp-item + .exp-item { margin-top: 0; }
+  .exp-item__role, .card__title { font-size: 10.5pt; line-height: 1.3; margin: 0 0 1.5mm; }
+  .exp-item__meta { display: flex; flex-direction: column; align-items: flex-start; gap: .5mm; font-size: 9.5pt; line-height: 1.35; margin: 0 0 1.5mm; }
+  .exp-item__company { color: #2563eb; }
+  .exp-item__date { color: #334155; }
+  .list { display: block; margin-top: 1mm; }
+  .list li { font-size: inherit; line-height: 1.4; padding-left: 3.5mm; margin: 1mm 0; orphans: 2; widows: 2; }
+  .list li::before { left: .8mm; top: .55em; width: .8mm; height: .8mm; }
+  .list--nested { padding-left: 2mm; }
+  .cards, .edu { display: block; }
+  .card__text, .muted { line-height: 1.4; }
+  .col-aside { font-size: 10pt; }
+  .col-aside .sub { font-size: 10pt; line-height: 1.3; margin: 3mm 0 1mm; break-after: avoid; }
+  .col-aside p { orphans: 2; widows: 2; }
+  .edu__meta { font-size: 9pt; margin: 1mm 0; }
+  #contact { break-inside: avoid; }
+  .contact { display: block; }
+  .contact li { padding: 1.5mm 0; gap: 2mm; line-height: 1.4; break-inside: avoid; }
+  .contact a { overflow-wrap: anywhere; }
+  .icon { width: 3.5mm; height: 3.5mm; flex-basis: 3.5mm; fill: #2563eb; }
+  .socials { gap: 2mm; margin-top: 2mm; }
+  .socials a { width: 7mm; height: 7mm; border: .25mm solid #dce4ef; }
+  .socials .icon { width: 4mm; height: 4mm; }
+  .divider { display: none; }
+  .section__title, .sub { break-inside: avoid; }
+  #education, #languages, #additional-info, #hobby { break-inside: avoid; }
+  .employment-periods { gap: 1mm 4mm; font-size: 9.5pt; margin-bottom: 1mm; }
+  .employment-note { font-size: 9.5pt; line-height: 1.35; margin-bottom: 1mm; }
+  .compact-general .exp-item--compact { padding: 3mm; margin-bottom: 2mm; }
+  .compact-general .exp-item--compact .exp-item__role { margin-bottom: .8mm; }
+  .compact-general .exp-item--compact .exp-item__meta { margin-bottom: 0; }
+}
 
-  :root {
-    --color-text: #000000 !important;
-    --color-heading: #000000 !important;
-    --color-text-muted: #404040 !important;
-    --color-primary: #2563eb !important;
-    --color-bg: #ffffff !important;
-    --color-surface: #ffffff !important;
-    --color-border: #e5e5e5 !important;
-  }
+@media print {
+  .employment-entry { break-inside: avoid; }
+  .employment-group > .exp-item__role { break-after: avoid; }
+  .employment-company { font-size: 10pt; line-height: 1.3; margin-bottom: 1mm; break-after: avoid; }
+  .employment-description { font-size: 10.5pt; line-height: 1.35; margin: 1mm 0 0; }
+  .employment-entry + .employment-entry { margin-top: 2mm; padding-top: 2mm; }
+  .employment-group .employment-note { margin: .5mm 0 1mm; }
+}
 
-  @page {
-    margin: 2cm;
-    size: A4;
-  }
-
-  body {
-    font-size: 11pt;
-    line-height: 1.4;
-    background: white !important;
-    color: black !important;
-  }
-
-  /* Hide elements not needed for print */
-  .lang-switch,
-  .theme-toggle,
-  .skip-link,
-  .socials {
-    display: none !important;
-  }
-
-  /* Layout adjustments */
-  .hero {
-    padding-top: 0;
-    padding-bottom: 1rem;
-    break-inside: avoid;
-  }
-
-  .hero__name {
-    font-size: 20pt;
-    color: black !important;
-  }
-
-  .avatar {
-    width: 80px;
-    height: 80px;
-  }
-
-  .resume-card {
-    box-shadow: none !important;
-    border: 1px solid #ccc !important;
-    margin: 0;
-    padding: 1.5rem !important;
-  }
-
-  .resume-grid {
-    display: block;
-  }
-
-  .col-main {
-    margin-bottom: 2rem;
-  }
-
-  .col-aside {
-    break-inside: avoid;
-  }
-
-  /* Typography for print */
-  .section__title {
-    font-size: 12pt;
-    border-bottom: 1px solid #666;
-    padding-bottom: 2pt;
-    margin-bottom: 8pt;
-    break-after: avoid;
-  }
-
-  .exp-item {
-    border: none !important;
-    background: none !important;
-    padding: 0 !important;
-    margin-bottom: 12pt;
-    break-inside: avoid;
-  }
-
-  .exp-item__role {
-    font-size: 11pt;
-    font-weight: bold;
-  }
-
-  .exp-item__meta {
-    font-size: 9pt;
-    color: #666 !important;
-  }
-
-  .card {
-    border: 1px solid #ddd !important;
-    background: none !important;
-    padding: 8pt !important;
-    margin-bottom: 8pt;
-    break-inside: avoid;
-  }
-
-  .list li::before {
-    background: black !important;
-  }
-
-  .contact li {
-    break-inside: avoid;
-    padding: 2pt 0;
-  }
-
-  .icon {
-    width: 12pt;
-    height: 12pt;
-    fill: black !important;
-  }
-
-  /* Ensure proper page breaks */
-  .section {
-    break-inside: avoid;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 8pt;
-    color: #666;
-    border-top: 1px solid #ccc;
-    padding-top: 4pt;
-  }
+@media print {
+  #certificates > .list > li, .skill-item { break-inside: avoid; }
 }

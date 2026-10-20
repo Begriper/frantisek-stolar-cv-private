@@ -11,7 +11,7 @@
     <meta name="author" content="František Stolár" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#2563eb" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -46,18 +46,7 @@
       href="https://begriper.github.io/"
     />
 
-    <script>
-      // Prevent theme flash - initialize immediately
-      (function() {
-        const theme = localStorage.getItem('theme') || 'auto';
-        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else if (theme === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      })();
-    </script>
-    <script src="/js/main.js" type="module"></script>
+<script src="/js/main.js" type="module"></script>
   </head>
 
   <body>
@@ -85,15 +74,7 @@
         <a href="/pl/" data-lang="pl" class="lang">PL</a>
         <a href="/en/" data-lang="en" class="lang">EN</a>
         <a href="/de/" data-lang="de" class="lang">DE</a>
-        <button 
-          id="theme-toggle" 
-          class="theme-toggle"
-          aria-label="Toggle theme (light, dark, auto)"
-          title="Toggle theme"
-        >
-          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-        </button>
-      </nav>
+</nav>
     </header>
 
     <main id="main" class="container resume-card" role="main">
@@ -101,23 +82,7 @@
         <!-- =========  LEFT COLUMN  ========= -->
         <section class="col-main">
           <!-- ===== Summary ===== -->
-          <section id="summary" class="section">
-            <h2 class="section__title">Summary</h2>
-            <p>
-              Responsible and detail-oriented professional with long-term
-              experience in German logistics (Müller – Ulm) and a strong
-              interest in technology, data analytics and process automation.
-              Since May 2025 I have been actively developing skills in Data
-              Analytics (Excel, Power Query, SQL, Power BI, Python). I work well both
-              independently and in teams, enjoy learning new technologies
-              (including AI) and focus on efficiency, quality and creative
-              problem-solving.
-            </p>
-          </section>
-
-          <hr class="divider" />
-
-          <!-- ===== Experience ===== -->
+<!-- ===== Experience ===== -->
           <section id="experience" class="section">
             <h2 class="section__title">Experience</h2>
 

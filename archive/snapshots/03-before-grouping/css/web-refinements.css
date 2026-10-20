@@ -1,0 +1,16 @@
+/* Keep the original design; prevent long columns from stretching their sections. */
+.resume-grid { align-items: start; }
+.col-main, .col-aside, .section { align-content: start; min-width: 0; }
+.contact a, .muted, .card__text { overflow-wrap: anywhere; }
+.exp-item__date { white-space: nowrap; }
+@media (max-width: 480px) {
+  .lang-switch { flex-wrap: wrap; justify-content: center; }
+}
+.skip-link:not(:focus) { top: -100px; }
+
+/* Compact content uses the existing rounded-card design. */
+.employment-periods { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: var(--font-size-sm); }
+.employment-period { white-space: nowrap; }
+.employment-note { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.exp-item--compact { gap: 6px; padding: 12px 16px; }
+.compact-general .col-aside .section { gap: 12px; }

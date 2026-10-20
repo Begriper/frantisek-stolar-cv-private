@@ -1,13 +1,13 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   /* Colors - Light theme (Professional Blue) */
   --color-primary: #2563eb;
   --color-primary-hover: #1d4ed8;
   --color-accent: #0ea5e9;
-  --color-text: #0f172a;
-  --color-text-muted: #000000;
-  --color-heading: #1e293b;
+  --color-text: #17243b;
+  --color-text-muted: #475569;
+  --color-heading: #17243b;
   --color-bg: #ffffff;
   --color-surface: #f8fafc;
   --color-surface-hover: #f1f5f9;
@@ -69,54 +69,6 @@
   /* Social icons */
   --social-size: 44px;
   --social-gap: 10px;
-}
-
-[data-theme="dark"] {
-  color-scheme: dark;
-  --color-primary: #60a5fa;
-  --color-primary-hover: #3b82f6;
-  --color-accent: #0ea5e9;
-  --color-text: #f8fafc;
-  --color-text-muted: #ffffff;
-  --color-heading: #f1f5f9;
-  --color-bg: #0f172a;
-  --color-surface: #1e293b;
-  --color-surface-hover: #334155;
-  --color-border: #334155;
-  --color-border-muted: #475569;
-  --color-success: #34d399;
-  --color-warning: #fbbf24;
-  --color-error: #f87171;
-
-  /* Avatar settings stay the same for dark theme */
-  --avatar-zoom: 1.5;
-  --avatar-focus-x: 55%;
-  --avatar-focus-y: 15%;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --color-primary: #60a5fa;
-    --color-primary-hover: #3b82f6;
-    --color-accent: #0ea5e9;
-    --color-text: #f8fafc;
-    --color-text-muted: #94a3b8;
-    --color-heading: #f1f5f9;
-    --color-bg: #0f172a;
-    --color-surface: #1e293b;
-    --color-surface-hover: #334155;
-    --color-border: #334155;
-    --color-border-muted: #475569;
-    --color-success: #34d399;
-    --color-warning: #fbbf24;
-    --color-error: #f87171;
-    
-    /* Avatar settings stay the same for auto dark theme */
-    --avatar-zoom: 1.5;
-    --avatar-focus-x: 55%;
-    --avatar-focus-y: 15%;
-  }
 }
 
 @media (max-width: 480px) {

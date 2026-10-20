@@ -1,0 +1,50 @@
+import json,re,unicodedata
+from pathlib import Path
+from pypdf import PdfReader
+import pypdfium2 as pdfium
+from PIL import Image
+from html.parser import HTMLParser
+root=Path.cwd();review=root/'.review'
+data=json.loads((root/'data/cv.json').read_text(encoding='utf-8'))
+normalize=lambda s: re.sub(r'\s+','',unicodedata.normalize('NFKC',s).replace('\u00ad','')).casefold()
+reports=[]
+for lang in ['sk','cs','pl','de','en']:
+ path=review/('browser-print-'+lang+'.pdf');reader=PdfReader(path)
+ texts=[p.extract_text() for p in reader.pages];combined='\n'.join(texts);alltext=normalize(combined)
+ assert data['person']['name'] in texts[0]
+ assert data['person']['email'] in texts[0]
+ assert data['person']['phone'] in texts[0]
+ assert '\ufffd' not in combined
+ assert not re.search(r'Návrh na kontrolu|čakajú na schválenie|obdobie na potvrdenie',combined)
+ for job in data['jobs']:
+  wording=data['locales'][lang]['jobs'].get(job['id'])
+  if not wording: continue
+  stamp=lambda d:d[5:]+'/'+d[:4]
+  required=[wording['role'],job['employer'],stamp(job['start'])+' – '+stamp(job['end'])]+wording['bullets']
+  for text in required: assert normalize(text) in alltext, (lang,job['id'],'missing',text)
+  assert any(all(normalize(t) in normalize(page) for t in required) for page in texts),(lang,job['id'],'split across pages')
+ class Text(HTMLParser):
+  def __init__(self):super().__init__();self.parts=[]
+  def handle_data(self,s):
+   if s.strip():self.parts.append(s)
+ for section in ['projects','hobby','skills','education','certificates','languages','additional-info']:
+  parser=Text();parser.feed(data['locales'][lang]['legacySections'][section])
+  for part in parser.parts:assert normalize(part) in alltext,(lang,section,'missing',part)
+ for page in reader.pages:
+  assert abs(float(page.mediabox.width)-595.28)<2 and abs(float(page.mediabox.height)-841.89)<2
+  assert len(page.extract_text().strip())>100,'Near-blank page'
+ doc=pdfium.PdfDocument(str(path));images=[]
+ for i in range(len(doc)):
+  image=doc[i].render(scale=1.2).to_pil().convert('RGB');image.save(review/f'print-{lang}-{i+1}.png');images.append(image)
+ cols=min(3,len(images));rows=(len(images)+cols-1)//cols
+ montage=Image.new('RGB',(images[0].width*cols+20*(cols-1),images[0].height*rows+20*(rows-1)),'#dbe2ed')
+ for i,img in enumerate(images):montage.paste(img,((i%cols)*(img.width+20),(i//cols)*(img.height+20)))
+ montage.thumbnail((1600,1600));montage.save(review/f'print-{lang}-overview.png')
+ (review/f'print-{lang}-text.txt').write_text(combined,encoding='utf-8')
+ reports.append({'lang':lang,'pages':len(texts),'characters':[len(t) for t in texts],'allContentPresent':True,'jobsNotSplit':True,'contactOnFirstPage':True})
+base=normalize('\n'.join(p.extract_text() for p in PdfReader(review/'browser-print-sk.pdf').pages))
+for suffix in ['after-scroll','mobile-nojs','no-background']:
+ texts=[p.extract_text() for p in PdfReader(review/f'browser-print-sk-{suffix}.pdf').pages]
+ assert normalize('\n'.join(texts))==base,('Different content in',suffix)
+(review/'browser-print-check.json').write_text(json.dumps(reports,indent=2),encoding='utf-8')
+print(json.dumps(reports,indent=2))

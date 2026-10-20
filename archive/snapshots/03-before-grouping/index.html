@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirect…</title>
+    <meta http-equiv="refresh" content="2;url=/sk/" />
+    <script>
+      (function () {
+        const map = {
+          sk: "/sk/",
+          cs: "/cs/",
+          cz: "/cs/", // alias
+          pl: "/pl/",
+          en: "/en/",
+          de: "/de/",
+        };
+        const saved = (localStorage.getItem("lang") || "").toLowerCase();
+        const nav = (navigator.language || "sk").slice(0, 2).toLowerCase();
+        const dest = map[saved] || map[nav] || "/sk/";
+        location.replace(dest);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>
+      Redirecting… If nothing happens,
+      <a href="/sk/">open Slovak version</a>
+      .
+    </p>
+  </body>
+</html>

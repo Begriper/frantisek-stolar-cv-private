@@ -1,0 +1,32 @@
+/* Keep the original design; prevent long columns from stretching their sections. */
+.resume-grid { align-items: start; }
+.col-main, .col-aside, .section { align-content: start; min-width: 0; }
+.contact a, .muted, .card__text { overflow-wrap: anywhere; }
+.exp-item__date { white-space: nowrap; }
+@media (max-width: 480px) {
+  .lang-switch { flex-wrap: wrap; justify-content: center; }
+}
+.skip-link:not(:focus) { top: -100px; }
+
+/* Compact content uses the existing rounded-card design. */
+.employment-periods { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: var(--font-size-sm); }
+.employment-period { white-space: nowrap; }
+.employment-note { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.exp-item--compact { gap: 6px; }
+.compact-general .col-aside .section { gap: 12px; }
+
+/* Shared job headings, individual employers and their recorded periods. */
+.employment-entry + .employment-entry { border-top: 1px solid #dfe7f3; margin-top: 16px; padding-top: 16px; }
+.employment-company { color: #2563eb; font-size: 1em; font-weight: 600; margin: 0 0 5px; }
+.employment-description { margin: 5px 0 0; line-height: 1.5; }
+.employment-group .employment-note { margin: 4px 0; }
+
+/* Balanced columns keep the original visual identity and natural content height. */
+@media screen and (min-width: 1024px) {
+  .resume-grid { grid-template-columns: minmax(0, 68fr) minmax(0, 32fr); gap: 32px; }
+}
+.hero__name { margin-bottom: 0; }
+.exp-item, .edu__item { border: 1px solid #dce4ef; border-radius: 12px; padding: 16px; background: #f8fafc; }
+.exp-item__meta { flex-direction: column; align-items: flex-start; gap: 4px; }
+.skill-item { min-width: 0; }
+.skill-item .sub { margin-bottom: 8px; }
