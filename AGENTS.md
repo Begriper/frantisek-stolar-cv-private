@@ -16,7 +16,8 @@
   `scripts/site.mjs`, styles `css/cv.css` (screen + A4 print). Native browser print
   (Ctrl+P) is the PDF source and must stay two A4 pages with clickable links.
   No profile ("O mne"), Udemy projects, availability statement, footer or buttons.
-  Location shows the country only. German level is "basic", never a CEFR code.
+  Location is "Lendak, <country>" linked to Google Maps. German level is "basic",
+  never a CEFR code. Portrait crop must show the head and both elbows (as on Facebook).
 - Latest saved SK PDF uses Inter. Other saved language PDFs predate final Inter
   verification. Do not silently claim every saved artifact is current or approved.
 - Keep local dependencies, credentials, caches and browser profiles out of Git.

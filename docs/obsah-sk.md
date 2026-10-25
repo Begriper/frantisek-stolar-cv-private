@@ -8,7 +8,7 @@ Dizajn sa rieši až v ďalšej fáze.
 ## František Stolár
 Výroba · Sklad a logistika · Zákaznícka podpora · Digitálne zručnosti
 
-**Kontakt:** Slovensko · +421 907 407 968 · fero.stolar@gmail.com ·
+**Kontakt:** Lendak, Slovensko (odkaz na Google Mapy) · +421 907 407 968 · fero.stolar@gmail.com ·
 frantisek-stolar.cv · klikateľné ikonky GitHub a LinkedIn (fungujú aj v PDF)
 
 *(Časť „O mne“ je vyradená – CV začína rovno pracovnými skúsenosťami.)*

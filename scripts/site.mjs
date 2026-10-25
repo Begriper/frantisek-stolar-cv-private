@@ -17,7 +17,7 @@ function contact(person, view) {
   const strip = url => url.replace(/^(https:\/\/|mailto:|tel:)(www\.)?/, '').replace(/\/$/, '');
   const row = (name, href, text) => '<li>' + icon(name) + (href ? '<a href="' + e(href) + '">' + e(text) + '</a>' : e(text)) + '</li>';
   return '<ul class="contacts">' +
-    row('location', '', view.location) +
+    row('location', person.map, view.location) +
     row('phone', 'tel:' + person.phone.replaceAll(' ', ''), person.phone) +
     row('email', 'mailto:' + person.email, person.email) +
     view.textLinks.map(key => row(key, person[key], strip(person[key]))).join('') +

@@ -91,7 +91,7 @@ test('Slovak CV uses field sections and one-line short jobs without profile or p
   assert.match(html,/Nemčina<\/span><span>základy/);
   assert.match(html,/s maturitou/);
   assert.match(html,/frantisek-stolar\.cv<\/a>/);
-  assert.match(html,/<\/svg>Slovensko<\/li>/);
+  assert.match(html,/<\/svg><a href="https:\/\/www\.google\.com\/maps\/search\/\?api=1&amp;query=Lendak%2C\+Slovakia">Lendak, Slovensko<\/a><\/li>/);
   assert.match(html,/class="socials">[\s\S]*href="https:\/\/github\.com\/Begriper"/);
   assert.match(html,/class="socials">[\s\S]*href="https:\/\/linkedin\.com\/in\/frantisek-stolar"/);
   assert.doesNotMatch(html,/Nemčina – A1|Základná škola|súčasnosť|Veľmi dobrá adaptabilita|operáci|členk|maród/);
