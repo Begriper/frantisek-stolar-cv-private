@@ -137,3 +137,9 @@ test('all five languages share sections, grouped employers and periods without s
     assert.equal(web.sidebar.find(section=>section.id==='languages').items.length,5,lang+' languages');
   }
 });
+
+test('mobile layout rules are limited to screens so they never leak into print or PDF',async()=>{
+  const { readFile } = await import('node:fs/promises');
+  const css=await readFile(new URL('../css/cv.css',import.meta.url),'utf8');
+  for(const query of css.match(/@media[^{]*\{/g)) assert.ok(/print|screen/.test(query),query);
+});
