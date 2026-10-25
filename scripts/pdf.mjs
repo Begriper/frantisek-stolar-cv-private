@@ -12,7 +12,7 @@ try {
   const page = await instance.newPage({ reducedMotion:'reduce' });
   if(doc.id==='general') server=await serve(fileURLToPath(output),0);
   await page.goto(server?'http://127.0.0.1:'+server.address().port+'/'+options.lang+'/':documentUrl.href);
-  if(server) await page.locator('.avatar__img').evaluate(img=>img.decode());
+  if(server) await page.locator('.photo, .avatar__img').first().evaluate(img=>img.decode());
   await page.evaluate(()=>document.fonts.ready);
   await page.emulateMedia({media:'print'});
   await page.evaluate(async()=>{

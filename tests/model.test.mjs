@@ -3,12 +3,19 @@ import assert from 'node:assert/strict';
 import { readData, validateData, validateTarget } from '../scripts/model.mjs';
 import { renderDocument, renderWeb } from '../scripts/render.mjs';
 const data=await readData();
+// Approval gates are tested on a copy reset to the unapproved review state.
+const pending=structuredClone(data);
+Object.assign(pending.review,{slovakContentApproved:false,slovakLayoutApproved:false,translationsApproved:[],publishApproved:false});
 test('review stage allows requested translation drafts but blocks variants and release',()=>{
-  assert.doesNotThrow(()=>validateTarget(data,'sk','general'));
-  for(const lang of ['cs','pl','de','en']) assert.doesNotThrow(()=>validateTarget(data,lang,'general'));
-  assert.throws(()=>validateTarget(data,'de','general',true),/approval/);
-  assert.throws(()=>validateTarget(data,'sk','production'),/approve/);
-  assert.throws(()=>validateTarget(data,'sk','general',true),/approval/);
+  assert.doesNotThrow(()=>validateTarget(pending,'sk','general'));
+  for(const lang of ['cs','pl','de','en']) assert.doesNotThrow(()=>validateTarget(pending,lang,'general'));
+  assert.throws(()=>validateTarget(pending,'de','general',true),/approval/);
+  assert.throws(()=>validateTarget(pending,'sk','production'),/approve/);
+  assert.throws(()=>validateTarget(pending,'sk','general',true),/approval/);
+});
+
+test('approved general CV can be released in all five languages',()=>{
+  for(const lang of ['sk','cs','pl','de','en']) assert.doesNotThrow(()=>validateTarget(data,lang,'general',true));
 });
 test('duplicate employment and reversed dates fail before rendering',()=>{
   const duplicate=structuredClone(data); duplicate.jobs.push(duplicate.jobs[0]);
@@ -29,15 +36,16 @@ test('no invented German level, CNC experience or medical details enter the draf
   assert.doesNotMatch(html,/\bB1\b|CNC|operáci|PN-ke|práceneschop|členk/);
   assert.match(html,/Laserové označovanie dielov logom/);
 });
-test('website preserves the original design and uses native browser print without document buttons',()=>{
-  const html=renderWeb(data,'sk',[{id:'general',label:'Všeobecný životopis'}]);
-  assert.doesNotMatch(html,/class="actions"|class="variants"|href="\/downloads\/|window.print|<button/);
-  for(const cls of ['hero__name','avatar__img','resume-card','resume-grid','exp-item','col-aside'])
-    assert.ok(html.includes(cls));
-  assert.match(html,/href="\/css\/print.css" media="print"/);
-  assert.match(html,/href="\/cs\/"/);
-  assert.equal((html.match(/data-job=/g)||[]).length,data.jobs.length);
-  assert.doesNotMatch(html,/id="projects"/);
+test('all five languages use the clean light-only template without scripts, buttons or theme switching',()=>{
+  for(const lang of ['sk','cs','pl','de','en']) {
+    const html=renderWeb(data,lang);
+    assert.match(html,/href="\/css\/cv\.css"/);
+    assert.match(html,/<meta name="color-scheme" content="light">/);
+    assert.doesNotMatch(html,/<script|<button|theme|dark|🌙|resume-card|href="\/downloads\/|window.print/);
+    assert.match(html,new RegExp('aria-current="page">'+(lang==='cs'?'CZ':lang.toUpperCase())+'<'));
+    assert.equal((html.match(/<h1/g)||[]).length,1,lang);
+    assert.ok(html.includes('<html lang="'+lang+'">'),lang);
+  }
 });
 
 test('editorial HTML is escaped in generated text fields',()=>{
@@ -50,7 +58,7 @@ test('editorial HTML is escaped in generated text fields',()=>{
 
 test('public output has no profile or editorial notices while approval gates remain active',()=>{
   assert.equal(data.review.deltrianDatesConfirmed,true);
-  const clean=structuredClone(data);
+  const clean=structuredClone(pending);
   delete clean.locales.sk.profiles;
   assert.doesNotThrow(()=>validateTarget(clean,'sk','general'));
   for(const doc of clean.documents) {
@@ -65,20 +73,39 @@ test('public output has no profile or editorial notices while approval gates rem
 });
 
 
-test('compact general CV preserves every period and old job without rewriting source facts',()=>{
-  const html=renderWeb(data,'sk');
-  for(const fact of data.jobs) assert.equal(html.split('data-job="'+fact.id+'"').length-1,1);
-  assert.equal(html.split('data-group="warehouse"').length-1,1);
-  assert.equal((html.match(/class="employment-period"/g)||[]).length,13);
-  assert.match(html,/Agentúrne pridelenia aj priamy pracovný pomer/);
-  assert.match(html,/turistika v horách/);
-  assert.doesNotMatch(html,/ProStore|React|Základná škola|súčasnosť|Veľmi dobrá adaptabilita/);
+test('Slovak CV uses field sections and one-line short jobs without profile or projects',()=>{
+  const html=renderWeb(data,'sk'),web=data.locales.sk.generalWeb;
+  for(const fact of data.jobs) assert.equal(html.split('data-job="'+fact.id+'"').length-1,web.hiddenJobs.includes(fact.id)?0:1,fact.id);
+  let previous=-1;
+  for(const section of web.experienceSections) {
+    const index=html.indexOf('data-section="'+section.id+'"');
+    assert.ok(index>previous,section.id+' order');previous=index;
+  }
+  assert.equal((html.match(/class="short-job"/g)||[]).length,3);
+  assert.doesNotMatch(html,/Tatranská mliekareň|03\/2020 – 03\/2020|10\/2015 – 10\/2015/);
+  assert.match(html,/10\/2025 – 10\/2026/);
+  assert.match(html,/class="headline"/);
+  assert.doesNotMatch(html,/id="about"|ProStore/);
+  assert.match(html,/analýza nákladov na auto/);
   assert.match(html,/07.07.2025 – 18.08.2025/);
-  assert.match(html,/2019 – 2021/);
-  assert.match(html,/2024 – 2025/);
+  assert.match(html,/Nemčina<\/span><span>základy/);
+  assert.match(html,/s maturitou/);
+  assert.match(html,/frantisek-stolar\.cv<\/a>/);
+  assert.match(html,/<\/svg>Slovensko<\/li>/);
+  assert.match(html,/class="socials">[\s\S]*href="https:\/\/github\.com\/Begriper"/);
+  assert.match(html,/class="socials">[\s\S]*href="https:\/\/linkedin\.com\/in\/frantisek-stolar"/);
+  assert.doesNotMatch(html,/Nemčina – A1|Základná škola|súčasnosť|Veľmi dobrá adaptabilita|operáci|členk|maród/);
   assert.equal(data.jobs.length,19);
-  assert.ok(data.locales.sk.jobs['muller-2018'].bullets.length);
   assert.ok(data.locales.sk.legacySections.projects.includes('ProStore'));
+});
+
+test('experience sections reject missing or duplicated items',()=>{
+  const missing=structuredClone(data);
+  missing.locales.sk.generalWeb.hiddenJobs=[];
+  assert.throws(()=>validateData(missing),/experience sections/);
+  const duplicate=structuredClone(data);
+  duplicate.locales.sk.generalWeb.experienceSections[0].items.push('warehouse');
+  assert.throws(()=>validateData(duplicate),/experience sections/);
 });
 
 test('employment groups reject duplicate and unknown period references',()=>{
@@ -91,19 +118,22 @@ test('employment groups reject duplicate and unknown period references',()=>{
 });
 
 
-test('all five public versions share order, grouped employers and periods without stale content',()=>{
+test('all five languages share sections, grouped employers and periods without stale content',()=>{
   for(const lang of ['sk','cs','pl','de','en']) {
-    const html=renderWeb(data,lang);
-    for(const fact of data.jobs) assert.equal(html.split('data-job="'+fact.id+'"').length-1,1,lang+'/'+fact.id);
+    const html=renderWeb(data,lang),web=data.locales[lang].generalWeb;
+    for(const fact of data.jobs) assert.equal(html.split('data-job="'+fact.id+'"').length-1,web.hiddenJobs.includes(fact.id)?0:1,lang+'/'+fact.id);
     assert.equal((html.match(/data-group=/g)||[]).length,2);
     assert.equal((html.match(/data-entry=/g)||[]).length,10);
-    assert.doesNotMatch(html,/2027|©|<footer|ProStore|id="projects"|availability|undefined/);
+    assert.equal((html.match(/class="short-job"/g)||[]).length,3);
+    assert.doesNotMatch(html,/2027|©|<footer|ProStore|id="projects"|availability|undefined|<\/svg>Poprad|– A1/);
     let previous=-1;
-    for(const id of data.generalOrder) {
-      const index=html.indexOf((data.generalGroups.some(g=>g.id===id)?'data-group':'data-job')+'="'+id+'"');
-      assert.ok(index>previous,lang+'/'+id+' order');previous=index;
+    for(const section of web.experienceSections) {
+      const index=html.indexOf('data-section="'+section.id+'"');
+      assert.ok(index>previous,lang+'/'+section.id+' order');previous=index;
     }
     assert.match(html,/Drogerie Dienst Müller/);
+    assert.match(html,/10\/2025 – 10\/2026/);
     assert.match(html,/07.07.2025 – 18.08.2025/);
+    assert.equal(web.sidebar.find(section=>section.id==='languages').items.length,5,lang+' languages');
   }
 });

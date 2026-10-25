@@ -1,5 +1,5 @@
-import { readFileSync } from 'node:fs';
-import { escape as e, date, root } from './model.mjs';
+import { escape as e, date } from './model.mjs';
+import { renderSite } from './site.mjs';
 const list = items => '<ul>' + items.map(item => '<li>' + e(item) + '</li>').join('') + '</ul>';
 function contact(person) {
   return '<p class="contact-line">' + e(person.city) + ' · <a href="tel:' + e(person.phone.replaceAll(' ','')) + '">' + e(person.phone) +
@@ -46,67 +46,7 @@ export function renderDocument(data, lang, doc, draft = true) {
     '</p></section>' +
     footer(2) + '</section></main></body></html>';
 }
-// Preserve the original site's markup and design; only inject current CV data.
+// Every locale uses the clean template in site.mjs; the original HTML files stay as historical sources.
 export function renderWeb(data, lang, available = [], draft = true) {
-  const locale = data.locales[lang];
-  let html = readFileSync(new URL(lang+'/index.html',root),'utf8');
-  const view=locale.generalWeb;
-  html=html.replace(/(<meta\s+(?:name="description"|property="(?:og|twitter):description")\s+content=")[^"]*(")/g,
-    (_,a,b)=>a+e(view.ui.description)+b);
-  html=html.replace(/(<a href="#main" class="skip-link">)[^<]*(<\/a>)/,(_,a,b)=>a+e(view.ui.skip)+b);
-  html=html.replace('aria-label="Language"','aria-label="'+e(view.ui.language)+'"');
-
-  const employer = fact => locale.employerDisplay?.[fact.id] || fact.employer;
-  const period = id => {
-    const fact=data.jobs.find(item=>item.id===id);
-    return '<span class="employment-period" data-job="'+e(id)+'">'+e(date(fact.start))+' – '+e(date(fact.end))+'</span>';
-  };
-  const articles=data.generalOrder.map(id=>{
-    const group=data.generalGroups.find(item=>item.id===id);
-    if(group) {
-      const entries=group.entries.map(entry=>{
-        const fact=data.jobs.find(item=>item.id===entry.jobIds[0]);
-        const text=view.entryTexts[entry.id];
-        return '<div class="employment-entry" data-entry="'+e(entry.id)+'">'+
-          '<h4 class="employment-company">'+e(entry.employer || employer(fact))+'</h4>'+
-          '<div class="employment-periods">'+entry.jobIds.map(period).join('')+'</div>'+
-          (text.note?'<p class="employment-note">'+e(text.note)+'</p>':'')+
-          '<p class="employment-description">'+e(text.description)+'</p></div>';
-      }).join('');
-      return '<article class="exp-item employment-group" data-group="'+e(group.id)+'">'+
-        '<h3 class="exp-item__role">'+e(view.groupTitles[group.id])+'</h3>'+entries+'</article>';
-    }
-    const fact=data.jobs.find(item=>item.id===id),text=locale.jobs[id];
-    const bullets=text.bullets.slice(0,view.details[id]||0);
-    return '<article class="exp-item'+(!bullets.length?' exp-item--compact':'')+'" data-job="'+e(id)+'">'+
-      '<h3 class="exp-item__role">'+e(text.role)+'</h3><div class="exp-item__meta"><span class="exp-item__company">'+
-      e(employer(fact))+'</span><span class="exp-item__date">'+e(date(fact.start))+' – '+e(date(fact.end))+
-      '</span></div>'+(bullets.length?list(bullets).replace('<ul>','<ul class="list">'):'')+'</article>';
-  }).join('\n');
-  html=html.replace(/(<section id="experience"[^>]*>)[\s\S]*?<\/section>/,
-    (_,opening)=>opening+'<h2 class="section__title">'+e(view.experience)+'</h2>\n'+articles+'\n</section>');
-  html=html.replace(/(<section id="contact"[^>]*>\s*<h2[^>]*>)[\s\S]*?(<\/h2>)/,
-    (_,a,b)=>a+e(view.contact)+b);
-  html=html.replace(/\s*<footer class="footer">[\s\S]*?<\/footer>/,'');
-  for(const id of ['projects','hobby','skills','education','certificates','languages','additional-info']) {
-    const content=view&&Object.hasOwn(view.sections,id)?view.sections[id]:locale.legacySections[id];
-    if(content!==undefined) html=html.replace(new RegExp('<section id="'+id+'"[^>]*>[\\s\\S]*?<\\/section>'),
-      ()=>content===null?'':'<section id="'+id+'" class="section">'+content+'</section>');
-  }
-  // Keep supplemental content in the actual sidebar for screen, print and reading order.
-  const hobbies=html.match(/<section id="hobby"[^>]*>[\s\S]*?<\/section>/)?.[0];
-  if(hobbies) {
-    html=html.replace(hobbies,'');
-    html=html.replace('</aside>',hobbies+'\n</aside>');
-  }
-  html=html.replace(/<h3[^>]*>\s*<\/h3>/g,'');
-  html=html.replace(/(<h1 class="hero__name">)[^<]*(<\/h1>)/,(_,a,b)=>a+e(data.person.name)+b);
-  html=html.replace('<link rel="stylesheet" href="/css/print.css" media="print" />',
-    '<link rel="stylesheet" href="/css/web-refinements.css" />\n<link rel="stylesheet" href="/css/print.css" media="print" />\n<link rel="stylesheet" href="/css/typography.css" />');
-  html=html.replace(/<meta name="robots" content="[^"]*" \/>/,
-    '<meta name="robots" content="'+(draft?'noindex':'index, follow')+'" />');
-  if(view) html=html.replace('<body>','<body class="compact-general">');
-  html=html.replace('loading="lazy"','loading="eager"');
-  html=html.replace('</head>','<meta name="cv-layout" content="original" /></head>');
-  return html;
+  return renderSite(data, lang, draft);
 }

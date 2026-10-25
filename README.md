@@ -3,6 +3,17 @@
 Repozitár určený pre `Begriper/frantisek-stolar-cv-private`. Obsahuje osobné údaje
 zo životopisu a je určený na súkromnú prácu cez ChatGPT, Claude alebo lokálne nástroje.
 
+## Aktuálny stav (2026-10-25)
+
+- Web a PDF generuje šablóna `scripts/site.mjs` so štýlmi `css/cv.css` (dizajn B:
+  tmavomodrý bočný panel, iba svetlý režim). Texty všetkých piatich jazykov sú
+  v `data/cv.json` (`locales.<jazyk>.generalWeb`).
+- Úprava textu: zmeň `data/cv.json`, spusti `npm test` a `npm run build -- --release`,
+  výsledok v `dist/` sa nasadzuje do repozitára `Begriper/begriper.github.io`
+  (doména frantisek-stolar.cv).
+- PDF: `CV_BROWSER=msedge npm run pdf -- --lang sk` (alebo Ctrl+P na stránke).
+- Pôvodné súbory `sk/index.html` atď. a starý dizajn ostávajú iba ako historický zdroj.
+
 ## Kde začať
 
 - **Najnovšie editovateľné zdroje:** koreň repozitára, najmä `data/cv.json`,

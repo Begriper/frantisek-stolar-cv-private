@@ -16,10 +16,8 @@ export async function updateWeb(data, lang, draft = true) {
 }
 export async function build(options = args()) {
   const data = await readData();
-  if(options.release) {
-    for(const language of languages) for(const document of data.documents)
-      validateTarget(data,language,document.id,true);
-  }
+  // Only the general CV is published on the website; targeted variants stay private.
+  if(options.release) for(const language of languages) validateTarget(data,language,'general',true);
   const { doc } = validateTarget(data,options.lang,options.variant,options.release);
   for (const dir of ['css/','downloads/','documents/'+options.lang+'/']) await mkdir(new URL(dir,output),{recursive:true});
   for (const dir of ['css','js','img','fonts']) await cp(new URL(dir+'/',root),new URL(dir+'/',output),{recursive:true});

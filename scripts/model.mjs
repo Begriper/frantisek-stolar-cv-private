@@ -53,6 +53,17 @@ export function validateData(data) {
       for(const entry of group.entries)
         if(!locale.generalWeb.entryTexts[entry.id]?.description) throw new Error('Missing employment description');
     }
+    // Localized sections must place every displayed item once; hidden items are listed explicitly.
+    const sections=locale.generalWeb.experienceSections;
+    if(sections) {
+      const placed=[...sections.flatMap(section=>section.items),...(locale.generalWeb.hiddenJobs||[])];
+      if(new Set(placed).size!==placed.length || placed.length!==data.generalOrder.length ||
+         placed.some(id=>!data.generalOrder.includes(id))) throw new Error('Invalid experience sections');
+      for(const section of sections) {
+        if(!section.title?.trim() || !section.items.length) throw new Error('Invalid experience section: '+section.id);
+        if(section.compact && section.items.some(id=>groupIds.has(id))) throw new Error('Groups cannot be compact: '+section.id);
+      }
+    }
   }
   for (const doc of data.documents) {
     if (!variants.includes(doc.id) || doc.pages.length !== 2) throw new Error('Invalid document');

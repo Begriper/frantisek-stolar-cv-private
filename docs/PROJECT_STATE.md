@@ -1,4 +1,17 @@
-# Project state — 2026-10-20
+# Project state — 2026-10-25
+
+## Design B published
+
+- User approved Slovak content, design B (dark sidebar) and publication of all five
+  languages. Review flags in `data/cv.json` are set accordingly.
+- All locales render through `scripts/site.mjs` + `css/cv.css`; the legacy HTML
+  injection renderer was removed. Experience is split into production, warehouse,
+  customer support and short-term sections; the one-day dairy job is hidden.
+- Five PDFs verified: two A4 pages each, five clickable links (web, email, phone,
+  LinkedIn, GitHub). Portrait is a 480 px crop (`img/portrait.jpg`) of `img/logo.jpg`.
+- Release output (`npm run build -- --release`) deployed to Begriper/begriper.github.io.
+
+# Earlier state — 2026-10-20
 
 ## Private archival upload — current task
 

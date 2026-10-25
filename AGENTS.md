@@ -10,9 +10,13 @@
   in archive/README.md; some are partial. Preserve archive files as historical records.
 - Do not invent employers, employment periods, skills, achievements, qualifications
   or language proficiency. Shared historical facts are in data/cv.json.
-- Current public presentation uses blue rounded cards, light mode, a portrait and
-  68/32 desktop/print columns. Native browser print is the general PDF source.
-  No profile, availability statement, footer or download/print buttons.
+- Current design (approved 2026-10-25, "design B"): dark navy sidebar with portrait,
+  contacts, skills, education, courses, languages and hobbies; white main column with
+  experience grouped into field sections. Light mode only, no scripts. Template is
+  `scripts/site.mjs`, styles `css/cv.css` (screen + A4 print). Native browser print
+  (Ctrl+P) is the PDF source and must stay two A4 pages with clickable links.
+  No profile ("O mne"), Udemy projects, availability statement, footer or buttons.
+  Location shows the country only. German level is "basic", never a CEFR code.
 - Latest saved SK PDF uses Inter. Other saved language PDFs predate final Inter
   verification. Do not silently claim every saved artifact is current or approved.
 - Keep local dependencies, credentials, caches and browser profiles out of Git.
